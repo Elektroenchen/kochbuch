@@ -2,21 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://elektroenchen.github.io/kochbuch/categories/</loc>
+    <loc>http://localhost:1313/kochbuch/categories/</loc>
     <lastmod>2025-01-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://elektroenchen.github.io/kochbuch/categories/hauptgerichte/</loc>
+    <loc>http://localhost:1313/kochbuch/categories/hauptgerichte/</loc>
     <lastmod>2025-01-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://elektroenchen.github.io/kochbuch/rezepte/</loc>
+    <loc>http://localhost:1313/kochbuch/rezepte/</loc>
     <lastmod>2025-01-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://elektroenchen.github.io/kochbuch/rezepte/schinkentoast/</loc>
+    <loc>http://localhost:1313/kochbuch/rezepte/schinkentoast/</loc>
     <lastmod>2025-01-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://elektroenchen.github.io/kochbuch/</loc>
+    <loc>http://localhost:1313/kochbuch/rezepte/wok_haehnchen_gemuese/</loc>
     <lastmod>2025-01-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://elektroenchen.github.io/kochbuch/tags/</loc>
+    <loc>http://localhost:1313/kochbuch/</loc>
+    <lastmod>2025-01-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/kochbuch/tags/</loc>
   </url>
 </urlset>
