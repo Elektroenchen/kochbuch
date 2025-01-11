@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Zimmers Kochbuch</title>
-    <link>http://localhost:1313/kochbuch/</link>
+    <link>https://elektroenchen.github.io/kochbuch/</link>
     <description>Recent content on Zimmers Kochbuch</description>
     <generator>Hugo -- 0.140.2</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 11 Jan 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/kochbuch/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://elektroenchen.github.io/kochbuch/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Pasta mit Pesto Verde</title>
-      <link>http://localhost:1313/kochbuch/rezepte/pasta_pesto_verde/</link>
+      <link>https://elektroenchen.github.io/kochbuch/rezepte/pasta_pesto_verde/</link>
       <pubDate>Sat, 11 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/kochbuch/rezepte/pasta_pesto_verde/</guid>
+      <guid>https://elektroenchen.github.io/kochbuch/rezepte/pasta_pesto_verde/</guid>
       <description>&lt;!-- raw HTML omitted --&gt;
 &lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;&lt;strong&gt;Zutaten&lt;/strong&gt;&lt;/p&gt;
@@ -44,9 +44,9 @@
     </item>
     <item>
       <title>Überbackener Schinkentoast</title>
-      <link>http://localhost:1313/kochbuch/rezepte/schinkentoast/</link>
+      <link>https://elektroenchen.github.io/kochbuch/rezepte/schinkentoast/</link>
       <pubDate>Sat, 11 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/kochbuch/rezepte/schinkentoast/</guid>
+      <guid>https://elektroenchen.github.io/kochbuch/rezepte/schinkentoast/</guid>
       <description>&lt;!-- raw HTML omitted --&gt;
 &lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;&lt;strong&gt;Zutaten&lt;/strong&gt;&lt;/p&gt;
@@ -86,9 +86,9 @@
     </item>
     <item>
       <title>Wokgericht mit Hähnchen und Gemüse</title>
-      <link>http://localhost:1313/kochbuch/rezepte/wok_haehnchen_gemuese/</link>
+      <link>https://elektroenchen.github.io/kochbuch/rezepte/wok_haehnchen_gemuese/</link>
       <pubDate>Sat, 11 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/kochbuch/rezepte/wok_haehnchen_gemuese/</guid>
+      <guid>https://elektroenchen.github.io/kochbuch/rezepte/wok_haehnchen_gemuese/</guid>
       <description>&lt;!-- raw HTML omitted --&gt;
 &lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;&lt;strong&gt;Zutaten&lt;/strong&gt;&lt;/p&gt;
