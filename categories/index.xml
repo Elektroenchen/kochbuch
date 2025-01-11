@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Categories on Zimmers Kochbuch</title>
-    <link>https://example.org/categories/</link>
+    <link>https://elektroenchen.github.io/kochbuch/categories/</link>
     <description>Recent content in Categories on Zimmers Kochbuch</description>
     <generator>Hugo -- 0.140.2</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 11 Jan 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://example.org/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://elektroenchen.github.io/kochbuch/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hauptgerichte</title>
-      <link>https://example.org/categories/hauptgerichte/</link>
+      <link>https://elektroenchen.github.io/kochbuch/categories/hauptgerichte/</link>
       <pubDate>Sat, 11 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://example.org/categories/hauptgerichte/</guid>
+      <guid>https://elektroenchen.github.io/kochbuch/categories/hauptgerichte/</guid>
       <description></description>
     </item>
   </channel>
