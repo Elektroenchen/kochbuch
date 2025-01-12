@@ -2,59 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Kategorien on Zimmers Kochbuch</title>
-    <link>https://elektroenchen.github.io/kochbuch/categories/</link>
+    <link>https://example.org/categories/</link>
     <description>Recent content in Kategorien on Zimmers Kochbuch</description>
     <generator>Hugo -- 0.140.2</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 12 Jan 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://elektroenchen.github.io/kochbuch/categories/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Beilagen</title>
-      <link>https://elektroenchen.github.io/kochbuch/categories/beilagen/</link>
-      <pubDate>Sun, 12 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://elektroenchen.github.io/kochbuch/categories/beilagen/</guid>
-      <description></description>
-    </item>
+    <atom:link href="https://example.org/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hauptgerichte</title>
-      <link>https://elektroenchen.github.io/kochbuch/categories/hauptgerichte/</link>
+      <link>https://example.org/categories/hauptgerichte/</link>
       <pubDate>Sun, 12 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://elektroenchen.github.io/kochbuch/categories/hauptgerichte/</guid>
+      <guid>https://example.org/categories/hauptgerichte/</guid>
       <description></description>
     </item>
     <item>
       <title>Nudelgerichte</title>
-      <link>https://elektroenchen.github.io/kochbuch/categories/nudelgerichte/</link>
+      <link>https://example.org/categories/nudelgerichte/</link>
       <pubDate>Sun, 12 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://elektroenchen.github.io/kochbuch/categories/nudelgerichte/</guid>
+      <guid>https://example.org/categories/nudelgerichte/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Geflügelgerichte</title>
+      <link>https://example.org/categories/gefl%C3%BCgelgerichte/</link>
+      <pubDate>Sat, 11 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://example.org/categories/gefl%C3%BCgelgerichte/</guid>
       <description></description>
     </item>
     <item>
       <title>Hackfleischgerichte</title>
-      <link>https://elektroenchen.github.io/kochbuch/categories/hackfleischgerichte/</link>
+      <link>https://example.org/categories/hackfleischgerichte/</link>
       <pubDate>Sat, 11 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://elektroenchen.github.io/kochbuch/categories/hackfleischgerichte/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Hähnchengerichte</title>
-      <link>https://elektroenchen.github.io/kochbuch/categories/h%C3%A4hnchengerichte/</link>
-      <pubDate>Sat, 11 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://elektroenchen.github.io/kochbuch/categories/h%C3%A4hnchengerichte/</guid>
+      <guid>https://example.org/categories/hackfleischgerichte/</guid>
       <description></description>
     </item>
     <item>
       <title>Reisgerichte</title>
-      <link>https://elektroenchen.github.io/kochbuch/categories/reisgerichte/</link>
+      <link>https://example.org/categories/reisgerichte/</link>
       <pubDate>Sat, 11 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://elektroenchen.github.io/kochbuch/categories/reisgerichte/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Toast</title>
-      <link>https://elektroenchen.github.io/kochbuch/categories/toast/</link>
-      <pubDate>Sat, 11 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://elektroenchen.github.io/kochbuch/categories/toast/</guid>
+      <guid>https://example.org/categories/reisgerichte/</guid>
       <description></description>
     </item>
   </channel>

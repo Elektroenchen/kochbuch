@@ -2,38 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Schlagworte on Zimmers Kochbuch</title>
-    <link>https://elektroenchen.github.io/kochbuch/tags/</link>
+    <link>https://example.org/tags/</link>
     <description>Recent content in Schlagworte on Zimmers Kochbuch</description>
     <generator>Hugo -- 0.140.2</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 12 Jan 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://elektroenchen.github.io/kochbuch/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Italienisch</title>
-      <link>https://elektroenchen.github.io/kochbuch/tags/italienisch/</link>
-      <pubDate>Sun, 12 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://elektroenchen.github.io/kochbuch/tags/italienisch/</guid>
-      <description></description>
-    </item>
+    <atom:link href="https://example.org/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Vegetarisch</title>
-      <link>https://elektroenchen.github.io/kochbuch/tags/vegetarisch/</link>
+      <link>https://example.org/tags/vegetarisch/</link>
       <pubDate>Sun, 12 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://elektroenchen.github.io/kochbuch/tags/vegetarisch/</guid>
+      <guid>https://example.org/tags/vegetarisch/</guid>
       <description></description>
     </item>
     <item>
-      <title>Asiatisch</title>
-      <link>https://elektroenchen.github.io/kochbuch/tags/asiatisch/</link>
+      <title>Wokgerichte</title>
+      <link>https://example.org/tags/wokgerichte/</link>
       <pubDate>Sat, 11 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://elektroenchen.github.io/kochbuch/tags/asiatisch/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Wokgericht</title>
-      <link>https://elektroenchen.github.io/kochbuch/tags/wokgericht/</link>
-      <pubDate>Sat, 11 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://elektroenchen.github.io/kochbuch/tags/wokgericht/</guid>
+      <guid>https://example.org/tags/wokgerichte/</guid>
       <description></description>
     </item>
   </channel>

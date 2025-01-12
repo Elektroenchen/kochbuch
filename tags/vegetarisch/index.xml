@@ -2,56 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Vegetarisch on Zimmers Kochbuch</title>
-    <link>https://elektroenchen.github.io/kochbuch/tags/vegetarisch/</link>
+    <link>https://example.org/tags/vegetarisch/</link>
     <description>Recent content in Vegetarisch on Zimmers Kochbuch</description>
     <generator>Hugo -- 0.140.2</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 12 Jan 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://elektroenchen.github.io/kochbuch/tags/vegetarisch/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Kartoffelgratin</title>
-      <link>https://elektroenchen.github.io/kochbuch/rezepte/kartoffelgratin/</link>
-      <pubDate>Sun, 12 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://elektroenchen.github.io/kochbuch/rezepte/kartoffelgratin/</guid>
-      <description>&lt;div class=&#34;container2col&#34;&gt;
-  &lt;div class=&#34;zutaten&#34;&gt;
-&lt;p&gt;&lt;strong&gt;Zutaten&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;1 kg Kartoffeln&lt;/li&gt;
-&lt;li&gt;150 g geraspelter Gouda&lt;/li&gt;
-&lt;li&gt;Salz, Pfeffer&lt;/li&gt;
-&lt;li&gt;125 g Crème double&lt;/li&gt;
-&lt;li&gt;125 ml Schlagsahne&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Ofen&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Ober-/Unterhitze: 170 bis 200 °C (vorgeheizt)&lt;/li&gt;
-&lt;li&gt;Heißluft: 150 bis 180 °C (nicht vorgeheizt)&lt;/li&gt;
-&lt;li&gt;Backzeit: 40 bis 50 Minuten&lt;/li&gt;
-&lt;/ul&gt;
-  &lt;/div&gt;
-  &lt;div class=&#34;zubereitung&#34;&gt;
-&lt;p&gt;&lt;strong&gt;Zubereitung&lt;/strong&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Kartoffeln waschen, dünn schälen und in sehr dünne Scheiben schneiden. Die Scheiben trocken tupfen.&lt;/li&gt;
-&lt;li&gt;Kartoffelscheiben schuppenförmig in eine flache Auflaufform schichten. Jede Schicht mit Salz und Pfeffer würzen. Die oberste Schicht mit geraspeltem Gouda bedecken.&lt;/li&gt;
-&lt;li&gt;Crème double und Schlagsahne miteinander verrühren. Mit Salz abschmecken und die Mischung gleichmäßig über die Kartoffeln gießen.&lt;/li&gt;
-&lt;li&gt;Die Auflaufform auf den Rost in den vorgeheizten Backofen stellen.
-&lt;ul&gt;
-&lt;li&gt;Ober-/Unterhitze: 170 bis 200 °C&lt;/li&gt;
-&lt;li&gt;Heißluft: 150 bis 180 °C&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Das Gratin für 40 bis 50 Minuten backen, bis die Kartoffeln weich sind und die Käsekruste goldbraun ist.&lt;/li&gt;
-&lt;/ol&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</description>
-    </item>
+    <atom:link href="https://example.org/tags/vegetarisch/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Linguine mit Gorgonzola-Sauce</title>
-      <link>https://elektroenchen.github.io/kochbuch/rezepte/linguine_gorgonzolasauce/</link>
+      <link>https://example.org/rezepte/linguine_gorgonzolasauce/</link>
       <pubDate>Sun, 12 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://elektroenchen.github.io/kochbuch/rezepte/linguine_gorgonzolasauce/</guid>
+      <guid>https://example.org/rezepte/linguine_gorgonzolasauce/</guid>
       <description>&lt;div class=&#34;container2col&#34;&gt;
   &lt;div class=&#34;zutaten&#34;&gt;
 &lt;p&gt;&lt;strong&gt;Zutaten&lt;/strong&gt;&lt;/p&gt;
@@ -93,9 +54,9 @@
     </item>
     <item>
       <title>Nudeln mit gerösteten Tomaten und Knoblauch-Ricotta</title>
-      <link>https://elektroenchen.github.io/kochbuch/rezepte/nudeln_tomaten_ricotta/</link>
+      <link>https://example.org/rezepte/nudeln_tomaten_ricotta/</link>
       <pubDate>Sun, 12 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://elektroenchen.github.io/kochbuch/rezepte/nudeln_tomaten_ricotta/</guid>
+      <guid>https://example.org/rezepte/nudeln_tomaten_ricotta/</guid>
       <description>&lt;div class=&#34;container2col&#34;&gt;
   &lt;div class=&#34;zutaten&#34;&gt;
 &lt;p&gt;&lt;strong&gt;Zutaten&lt;/strong&gt;&lt;/p&gt;
@@ -125,52 +86,10 @@
 &lt;/div&gt;</description>
     </item>
     <item>
-      <title>One-Pot-Pasta à la Lasagne</title>
-      <link>https://elektroenchen.github.io/kochbuch/rezepte/one_pot_lasagne/</link>
-      <pubDate>Sun, 12 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://elektroenchen.github.io/kochbuch/rezepte/one_pot_lasagne/</guid>
-      <description>&lt;div class=&#34;container2col&#34;&gt;
-  &lt;div class=&#34;zutaten&#34;&gt;
-&lt;p&gt;&lt;strong&gt;Zutaten&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;2 Zwiebeln&lt;/li&gt;
-&lt;li&gt;1 rote Paprikaschote&lt;/li&gt;
-&lt;li&gt;1 Knoblauchzehe&lt;/li&gt;
-&lt;li&gt;2 EL Öl&lt;/li&gt;
-&lt;li&gt;300 g Hackfleisch&lt;/li&gt;
-&lt;li&gt;Salz, Pfeffer&lt;/li&gt;
-&lt;li&gt;1 TL getrocknete italienische Kräuter&lt;/li&gt;
-&lt;li&gt;500 g passierte Tomaten&lt;/li&gt;
-&lt;li&gt;400 g stückige Tomaten&lt;/li&gt;
-&lt;li&gt;500 ml Rinderbrühe&lt;/li&gt;
-&lt;li&gt;160 g breite Bandnudeln&lt;/li&gt;
-&lt;li&gt;1 TL getrocknetes Basilikum&lt;/li&gt;
-&lt;li&gt;1 TL getrockneter Oregano&lt;/li&gt;
-&lt;li&gt;1–2 EL Parmesan (zum Würzen)&lt;/li&gt;
-&lt;li&gt;125 g Ricotta&lt;/li&gt;
-&lt;li&gt;50 g geriebener Parmesan&lt;/li&gt;
-&lt;li&gt;50 g geriebener Gouda&lt;/li&gt;
-&lt;/ul&gt;
-  &lt;/div&gt;
-  &lt;div class=&#34;zubereitung&#34;&gt;
-&lt;p&gt;&lt;strong&gt;Zubereitung&lt;/strong&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Zwiebeln, Paprika und Knoblauch fein würfeln.&lt;/li&gt;
-&lt;li&gt;Öl in einem großen Topf erhitzen, Hackfleisch darin krümelig braten, mit Salz und Pfeffer würzen.&lt;/li&gt;
-&lt;li&gt;Zwiebeln und Paprika hinzufügen, anschwitzen. Knoblauch unterrühren.&lt;/li&gt;
-&lt;li&gt;Passierte Tomaten, stückige Tomaten und Rinderbrühe angießen. Alles aufkochen und die Nudeln hinzufügen.&lt;/li&gt;
-&lt;li&gt;Italienische Kräuter, Basilikum, Oregano und Parmesan in die Mischung geben.&lt;/li&gt;
-&lt;li&gt;Nudeln knapp mit Flüssigkeit bedeckt zugedeckt 10–12 Minuten garen, dabei regelmäßig umrühren.&lt;/li&gt;
-&lt;li&gt;Ricotta in kleinen Nocken mithilfe von zwei Teelöffeln auf die Nudeln setzen. Mit Parmesan und Gouda gleichmäßig bestreuen.&lt;/li&gt;
-&lt;li&gt;Topf zudecken und Käse bei schwacher Hitze (Elektroherdplatte kann ausgeschaltet werden) 5 Minuten schmelzen lassen.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;strong&gt;Tipp&lt;/strong&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Penne Siciliana</title>
-      <link>https://elektroenchen.github.io/kochbuch/rezepte/penne_siciliana/</link>
+      <link>https://example.org/rezepte/penne_siciliana/</link>
       <pubDate>Sun, 12 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://elektroenchen.github.io/kochbuch/rezepte/penne_siciliana/</guid>
+      <guid>https://example.org/rezepte/penne_siciliana/</guid>
       <description>&lt;div class=&#34;container2col&#34;&gt;
   &lt;div class=&#34;zutaten&#34;&gt;
 &lt;p&gt;&lt;strong&gt;Zutaten&lt;/strong&gt;&lt;/p&gt;
@@ -208,9 +127,9 @@
     </item>
     <item>
       <title>Porree-Crêpes</title>
-      <link>https://elektroenchen.github.io/kochbuch/rezepte/porree_crepes/</link>
+      <link>https://example.org/rezepte/porree_crepes/</link>
       <pubDate>Sun, 12 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://elektroenchen.github.io/kochbuch/rezepte/porree_crepes/</guid>
+      <guid>https://example.org/rezepte/porree_crepes/</guid>
       <description>&lt;div class=&#34;container2col&#34;&gt;
   &lt;div class=&#34;zutaten&#34;&gt;
 &lt;p&gt;&lt;strong&gt;Zutaten&lt;/strong&gt;&lt;/p&gt;
@@ -256,9 +175,9 @@
     </item>
     <item>
       <title>Pasta mit Pesto Verde</title>
-      <link>https://elektroenchen.github.io/kochbuch/rezepte/pasta_pesto_verde/</link>
+      <link>https://example.org/rezepte/pasta_pesto_verde/</link>
       <pubDate>Sat, 11 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://elektroenchen.github.io/kochbuch/rezepte/pasta_pesto_verde/</guid>
+      <guid>https://example.org/rezepte/pasta_pesto_verde/</guid>
       <description>&lt;div class=&#34;container2col&#34;&gt;
   &lt;div class=&#34;zutaten&#34;&gt;
 &lt;p&gt;&lt;strong&gt;Zutaten&lt;/strong&gt;&lt;/p&gt;

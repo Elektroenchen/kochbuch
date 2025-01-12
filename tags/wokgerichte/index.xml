@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Reisgerichte on Zimmers Kochbuch</title>
-    <link>https://example.org/categories/reisgerichte/</link>
-    <description>Recent content in Reisgerichte on Zimmers Kochbuch</description>
+    <title>Wokgerichte on Zimmers Kochbuch</title>
+    <link>https://example.org/tags/wokgerichte/</link>
+    <description>Recent content in Wokgerichte on Zimmers Kochbuch</description>
     <generator>Hugo -- 0.140.2</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 11 Jan 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://example.org/categories/reisgerichte/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://example.org/tags/wokgerichte/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Wokgericht mit Hähnchen und Gemüse</title>
       <link>https://example.org/rezepte/wok_haehnchen_gemuese/</link>
