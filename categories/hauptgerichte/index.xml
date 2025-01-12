@@ -2,81 +2,59 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Hauptgerichte on Zimmers Kochbuch</title>
-    <link>http://localhost:1313/kochbuch/categories/hauptgerichte/</link>
+    <link>https://elektroenchen.github.io/kochbuch/categories/hauptgerichte/</link>
     <description>Recent content in Hauptgerichte on Zimmers Kochbuch</description>
     <generator>Hugo -- 0.140.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 11 Jan 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/kochbuch/categories/hauptgerichte/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 12 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://elektroenchen.github.io/kochbuch/categories/hauptgerichte/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Überbackener Schinkentoast</title>
-      <link>http://localhost:1313/kochbuch/rezepte/schinkentoast/</link>
-      <pubDate>Sat, 11 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/kochbuch/rezepte/schinkentoast/</guid>
-      <description>&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
+      <title>Porree-Crêpes</title>
+      <link>https://elektroenchen.github.io/kochbuch/rezepte/porree_crepes/</link>
+      <pubDate>Sun, 12 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://elektroenchen.github.io/kochbuch/rezepte/porree_crepes/</guid>
+      <description>&lt;div class=&#34;container2col&#34;&gt;
+  &lt;div class=&#34;zutaten&#34;&gt;
 &lt;p&gt;&lt;strong&gt;Zutaten&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;2 Zwiebeln&lt;/li&gt;
-&lt;li&gt;1 großer Apfel&lt;/li&gt;
-&lt;li&gt;250 g gekochter Schinken&lt;/li&gt;
-&lt;li&gt;4 Eier&lt;/li&gt;
-&lt;li&gt;2 EL Butter&lt;/li&gt;
-&lt;li&gt;1 TL Curry&lt;/li&gt;
-&lt;li&gt;30 g Mehl&lt;/li&gt;
-&lt;li&gt;½ l Milch&lt;/li&gt;
-&lt;li&gt;1 EL Petersilie&lt;/li&gt;
-&lt;li&gt;8 Scheiben Toastbrot&lt;/li&gt;
-&lt;li&gt;8 Chester-Scheibletten&lt;/li&gt;
+&lt;li&gt;75 g Butter&lt;/li&gt;
+&lt;li&gt;150 g Mehl&lt;/li&gt;
+&lt;li&gt;300 ml Milch&lt;/li&gt;
+&lt;li&gt;3 Eier&lt;/li&gt;
+&lt;li&gt;Salz, Muskat (für den Teig)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Backofen&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Füllung&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Ober-/Unterhitze: 230 – 250 °C&lt;/li&gt;
-&lt;li&gt;Backzeit: ca. 10 Minuten&lt;/li&gt;
+&lt;li&gt;3 Stangen Porree (Lauch)&lt;/li&gt;
+&lt;li&gt;3 EL Öl&lt;/li&gt;
+&lt;li&gt;75 ml Schlagsahne&lt;/li&gt;
+&lt;li&gt;Salz, Pfeffer, Muskat&lt;/li&gt;
+&lt;li&gt;150 g geriebener Käse (für die Füllung)&lt;/li&gt;
+&lt;li&gt;150 g geriebener Käse (zum Überbacken)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;&lt;strong&gt;Ofen&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;200 °C vorgeheizt&lt;/li&gt;
+&lt;li&gt;10 Minuten Backzeit&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Beilage&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Feldsalat&lt;/li&gt;
+&lt;/ul&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;zubereitung&#34;&gt;
 &lt;p&gt;&lt;strong&gt;Zubereitung&lt;/strong&gt;&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Zwiebeln abziehen, fein hacken.&lt;/li&gt;
-&lt;li&gt;Apfel schälen und würfeln.&lt;/li&gt;
-&lt;li&gt;Schinken würfeln, Eier hart kochen und würfeln.&lt;/li&gt;
-&lt;li&gt;Zwiebelwürfel in Butter glasig dünsten, Apfelwürfel und Curry hinzufügen.&lt;/li&gt;
-&lt;li&gt;Wenn der Apfel weich ist, mit Mehl bestäuben und Milch dazugeben. Aufkochen lassen, bis eine cremige Sauce entsteht.&lt;/li&gt;
-&lt;li&gt;Schinken, Eier und Petersilie unterrühren, abkühlen lassen.&lt;/li&gt;
-&lt;li&gt;Toastbrot toasten, mit der Masse bestreichen und mit Chester-Scheibletten belegen.&lt;/li&gt;
-&lt;li&gt;Bei 230 – 250 °C Ober-/Unterhitze ca. 10 Minuten überbacken.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;</description>
-    </item>
-    <item>
-      <title>Wokgericht mit Hähnchen und Gemüse</title>
-      <link>http://localhost:1313/kochbuch/rezepte/wok_haehnchen_gemuese/</link>
-      <pubDate>Sat, 11 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/kochbuch/rezepte/wok_haehnchen_gemuese/</guid>
-      <description>&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;p&gt;&lt;strong&gt;Zutaten&lt;/strong&gt;&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Teig zubereiten&lt;/strong&gt;:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;1 rote und 1 gelbe Paprika&lt;/li&gt;
-&lt;li&gt;1 Zucchini&lt;/li&gt;
-&lt;li&gt;150 g Brokkoli&lt;/li&gt;
-&lt;li&gt;2 Möhren&lt;/li&gt;
-&lt;li&gt;100 g Champignons&lt;/li&gt;
-&lt;li&gt;1 kleine Zwiebel&lt;/li&gt;
-&lt;li&gt;1 TL frischer Ingwer&lt;/li&gt;
-&lt;li&gt;200 g Hähnchenbrustfilet&lt;/li&gt;
-&lt;li&gt;1 EL Sojasauce, Pfeffer&lt;/li&gt;
-&lt;li&gt;Reis (Beilage)&lt;/li&gt;
-&lt;li&gt;1 EL + 1 EL Pflanzenöl&lt;/li&gt;
-&lt;li&gt;1 EL Sojasauce&lt;/li&gt;
-&lt;li&gt;1 EL Austernsauce&lt;/li&gt;
-&lt;li&gt;Salz, Pfeffer (nach Geschmack)&lt;/li&gt;
+&lt;li&gt;Butter in der Mikrowelle zerlassen.&lt;/li&gt;
+&lt;li&gt;Mehl mit der Milch verrühren, Eier und die flüssige Butter unterarbeiten. Mit Salz und Muskat würzen.&lt;/li&gt;
+&lt;li&gt;Den Teig 15 Minuten quellen lassen.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;p&gt;&lt;strong&gt;Zubereitung&lt;/strong&gt;&lt;/p&gt;</description>
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Porree-Füllung&lt;/strong&gt;:&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

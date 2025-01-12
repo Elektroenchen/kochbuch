@@ -13,8 +13,8 @@
       <link>https://elektroenchen.github.io/kochbuch/rezepte/schinkentoast/</link>
       <pubDate>Sat, 11 Jan 2025 00:00:00 +0000</pubDate>
       <guid>https://elektroenchen.github.io/kochbuch/rezepte/schinkentoast/</guid>
-      <description>&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
+      <description>&lt;div class=&#34;container2col&#34;&gt;
+  &lt;div class=&#34;zutaten&#34;&gt;
 &lt;p&gt;&lt;strong&gt;Zutaten&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;2 Zwiebeln&lt;/li&gt;
@@ -34,8 +34,8 @@
 &lt;li&gt;Ober-/Unterhitze: 230 – 250 °C&lt;/li&gt;
 &lt;li&gt;Backzeit: ca. 10 Minuten&lt;/li&gt;
 &lt;/ul&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;zubereitung&#34;&gt;
 &lt;p&gt;&lt;strong&gt;Zubereitung&lt;/strong&gt;&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Zwiebeln abziehen, fein hacken.&lt;/li&gt;
@@ -47,8 +47,8 @@
 &lt;li&gt;Toastbrot toasten, mit der Masse bestreichen und mit Chester-Scheibletten belegen.&lt;/li&gt;
 &lt;li&gt;Bei 230 – 250 °C Ober-/Unterhitze ca. 10 Minuten überbacken.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;</description>
+  &lt;/div&gt;
+&lt;/div&gt;</description>
     </item>
   </channel>
 </rss>
