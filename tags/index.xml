@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Schlagworte on Zimmers Kochbuch</title>
-    <link>https://example.org/tags/</link>
+    <link>https://Elektroenchen.github.io/kochbuch/tags/</link>
     <description>Recent content in Schlagworte on Zimmers Kochbuch</description>
     <generator>Hugo -- 0.140.2</generator>
-    <language>en-us</language>
+    <language>de-de</language>
     <lastBuildDate>Sun, 12 Jan 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://example.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://Elektroenchen.github.io/kochbuch/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Vegetarisch</title>
-      <link>https://example.org/tags/vegetarisch/</link>
+      <link>https://Elektroenchen.github.io/kochbuch/tags/vegetarisch/</link>
       <pubDate>Sun, 12 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://example.org/tags/vegetarisch/</guid>
+      <guid>https://Elektroenchen.github.io/kochbuch/tags/vegetarisch/</guid>
       <description></description>
     </item>
     <item>
       <title>Wokgerichte</title>
-      <link>https://example.org/tags/wokgerichte/</link>
+      <link>https://Elektroenchen.github.io/kochbuch/tags/wokgerichte/</link>
       <pubDate>Sat, 11 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://example.org/tags/wokgerichte/</guid>
+      <guid>https://Elektroenchen.github.io/kochbuch/tags/wokgerichte/</guid>
       <description></description>
     </item>
   </channel>
