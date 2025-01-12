@@ -18,6 +18,9 @@ theme = "PaperMod"
     # limit = 10 # refer: https://www.fusejs.io/api/methods.html#search
     keys = ["title", "permalink", "summary", "content"]
 
+[params.assets]
+    disableFingerprinting = true
+
 [menu]
     [[menu.main]]
         name = "Schlagworte"
