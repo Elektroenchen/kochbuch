@@ -2,3 +2,42 @@ baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'Zimmers Kochbuch'
 theme = "PaperMod"
+
+[params]
+  [params.homeInfoParams]
+    Title= "Willkommen in Zimmers Kochbuch"
+    Content = "Hier findest du alles, was lecker ist."
+
+  [params.fuseOpts]
+    isCaseSensitive = false
+    shouldSort = true
+    location = 0
+    distance = 1000
+    threshold = 0.2
+    minMatchCharLength = 0
+    # limit = 10 # refer: https://www.fusejs.io/api/methods.html#search
+    keys = ["title", "permalink", "summary", "content"]
+
+[menu]
+    [[menu.main]]
+        name = "Schlagworte"
+        url = "/tags/"
+        weight = 15
+
+    [[menu.main]]
+        name = "Kategorien"
+        url = "/categories/"
+        weight = 20
+
+  [[menu.main]]
+    name = "Suchen"
+    url = "/search/"
+    weight = 10
+
+[outputs]
+    home = ["HTML", "RSS", "JSON"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
