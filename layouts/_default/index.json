@@ -1,0 +1,11 @@
+{{- $.Scratch.Add "index" slice -}}
+{{- $.Scratch.Add "seenPermalinks" slice -}}
+{{- range site.RegularPages -}}
+    {{- if and (not .Params.searchHidden) (ne .Layout `archives`) (ne .Layout `search`) }}
+        {{- if not (in ($.Scratch.Get "seenPermalinks") .Permalink) }}
+            {{- $.Scratch.Add "index" (dict "title" .Title "content" .Plain "permalink" .Permalink "summary" .Summary) -}}
+            {{- $.Scratch.Add "seenPermalinks" (slice .Permalink | append ($.Scratch.Get "seenPermalinks")) -}}
+        {{- end }}
+    {{- end }}
+{{- end -}}
+{{- $.Scratch.Get "index" | jsonify -}}
