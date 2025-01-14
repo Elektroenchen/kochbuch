@@ -3,6 +3,7 @@ title: "One-Pot-Pasta a la Lasagne"
 date: 2025-01-12
 draft: false
 categories: ["Nudelgerichte"]
+tags: ["Eintopf"]
 ---
 
 <div class="container2col">
