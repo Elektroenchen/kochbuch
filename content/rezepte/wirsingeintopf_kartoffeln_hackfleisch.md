@@ -17,7 +17,7 @@ tags: ["Eintopf", "Wirsing", "Kartoffeln"]
   - 1 Knoblauchzehe  
   - 2 EL Butterschmalz  
   - 500 g gemischtes Hackfleisch  
-  - 1 l Gemüsebrühe  
+  - 500 ml Gemüsebrühe  
   - Salz, Pfeffer  
   - 2 TL Paprikapulver (edelsüß)  
   - 200 g Schmand  
