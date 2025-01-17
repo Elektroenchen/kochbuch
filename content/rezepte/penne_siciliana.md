@@ -22,7 +22,7 @@ tags: ["vegetarisch"]
   - Oliven aus dem Glas  
   - 5 Stiele Basilikum  
   - Salz, Pfeffer, etwas Zucker  
-  - 400 g Nudeln (z. B. Penne)  
+  - 500 g Nudeln (z. B. Penne)  
   - 50 g Parmesan  
 
   </div>
