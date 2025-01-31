@@ -2,52 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Kategorien on Zimmers Kochbuch</title>
-    <link>https://Elektroenchen.github.io/kochbuch/categories/</link>
+    <link>http://localhost:1313/kochbuch/categories/</link>
     <description>Recent content in Kategorien on Zimmers Kochbuch</description>
     <generator>Hugo -- 0.140.2</generator>
     <language>de-de</language>
     <lastBuildDate>Sun, 12 Jan 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://Elektroenchen.github.io/kochbuch/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/kochbuch/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Beilagen</title>
-      <link>https://Elektroenchen.github.io/kochbuch/categories/beilagen/</link>
+      <link>http://localhost:1313/kochbuch/categories/beilagen/</link>
       <pubDate>Sun, 12 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://Elektroenchen.github.io/kochbuch/categories/beilagen/</guid>
+      <guid>http://localhost:1313/kochbuch/categories/beilagen/</guid>
       <description></description>
     </item>
     <item>
       <title>Hackfleischgerichte</title>
-      <link>https://Elektroenchen.github.io/kochbuch/categories/hackfleischgerichte/</link>
+      <link>http://localhost:1313/kochbuch/categories/hackfleischgerichte/</link>
       <pubDate>Sun, 12 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://Elektroenchen.github.io/kochbuch/categories/hackfleischgerichte/</guid>
+      <guid>http://localhost:1313/kochbuch/categories/hackfleischgerichte/</guid>
       <description></description>
     </item>
     <item>
       <title>Hauptgerichte</title>
-      <link>https://Elektroenchen.github.io/kochbuch/categories/hauptgerichte/</link>
+      <link>http://localhost:1313/kochbuch/categories/hauptgerichte/</link>
       <pubDate>Sun, 12 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://Elektroenchen.github.io/kochbuch/categories/hauptgerichte/</guid>
+      <guid>http://localhost:1313/kochbuch/categories/hauptgerichte/</guid>
       <description></description>
     </item>
     <item>
       <title>Nudelgerichte</title>
-      <link>https://Elektroenchen.github.io/kochbuch/categories/nudelgerichte/</link>
+      <link>http://localhost:1313/kochbuch/categories/nudelgerichte/</link>
       <pubDate>Sun, 12 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://Elektroenchen.github.io/kochbuch/categories/nudelgerichte/</guid>
+      <guid>http://localhost:1313/kochbuch/categories/nudelgerichte/</guid>
       <description></description>
     </item>
     <item>
       <title>Geflügelgerichte</title>
-      <link>https://Elektroenchen.github.io/kochbuch/categories/gefl%C3%BCgelgerichte/</link>
+      <link>http://localhost:1313/kochbuch/categories/gefl%C3%BCgelgerichte/</link>
       <pubDate>Sat, 11 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://Elektroenchen.github.io/kochbuch/categories/gefl%C3%BCgelgerichte/</guid>
+      <guid>http://localhost:1313/kochbuch/categories/gefl%C3%BCgelgerichte/</guid>
       <description></description>
     </item>
     <item>
       <title>Reisgerichte</title>
-      <link>https://Elektroenchen.github.io/kochbuch/categories/reisgerichte/</link>
+      <link>http://localhost:1313/kochbuch/categories/reisgerichte/</link>
       <pubDate>Sat, 11 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://Elektroenchen.github.io/kochbuch/categories/reisgerichte/</guid>
+      <guid>http://localhost:1313/kochbuch/categories/reisgerichte/</guid>
       <description></description>
     </item>
   </channel>

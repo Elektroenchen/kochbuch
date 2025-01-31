@@ -2,87 +2,102 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://Elektroenchen.github.io/kochbuch/categories/beilagen/</loc>
+    <loc>http://localhost:1313/kochbuch/categories/beilagen/</loc>
     <lastmod>2025-01-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://Elektroenchen.github.io/kochbuch/tags/eintopf/</loc>
+    <loc>http://localhost:1313/kochbuch/tags/eintopf/</loc>
     <lastmod>2025-01-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://Elektroenchen.github.io/kochbuch/categories/hackfleischgerichte/</loc>
+    <loc>http://localhost:1313/kochbuch/categories/hackfleischgerichte/</loc>
     <lastmod>2025-01-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://Elektroenchen.github.io/kochbuch/categories/hauptgerichte/</loc>
+    <loc>http://localhost:1313/kochbuch/categories/hauptgerichte/</loc>
     <lastmod>2025-01-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://Elektroenchen.github.io/kochbuch/rezepte/kartoffelgratin/</loc>
+    <loc>http://localhost:1313/kochbuch/rezepte/kartoffelgratin/</loc>
     <lastmod>2025-01-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://Elektroenchen.github.io/kochbuch/tags/kartoffeln/</loc>
+    <loc>http://localhost:1313/kochbuch/tags/kartoffeln/</loc>
     <lastmod>2025-01-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://Elektroenchen.github.io/kochbuch/categories/</loc>
+    <loc>http://localhost:1313/kochbuch/tags/k%C3%A4se/</loc>
     <lastmod>2025-01-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://Elektroenchen.github.io/kochbuch/rezepte/linguine_gorgonzolasauce/</loc>
+    <loc>http://localhost:1313/kochbuch/rezepte/kaesespaetzle/</loc>
     <lastmod>2025-01-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://Elektroenchen.github.io/kochbuch/rezepte/nudelauflauf/</loc>
+    <loc>http://localhost:1313/kochbuch/categories/</loc>
     <lastmod>2025-01-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://Elektroenchen.github.io/kochbuch/categories/nudelgerichte/</loc>
+    <loc>http://localhost:1313/kochbuch/rezepte/linguine_gorgonzolasauce/</loc>
     <lastmod>2025-01-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://Elektroenchen.github.io/kochbuch/rezepte/nudeln_tomaten_ricotta/</loc>
+    <loc>http://localhost:1313/kochbuch/rezepte/nudelauflauf/</loc>
     <lastmod>2025-01-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://Elektroenchen.github.io/kochbuch/rezepte/one_pot_lasagne/</loc>
+    <loc>http://localhost:1313/kochbuch/categories/nudelgerichte/</loc>
     <lastmod>2025-01-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://Elektroenchen.github.io/kochbuch/rezepte/penne_siciliana/</loc>
+    <loc>http://localhost:1313/kochbuch/rezepte/nudeln_tomaten_ricotta/</loc>
     <lastmod>2025-01-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://Elektroenchen.github.io/kochbuch/rezepte/porree_crepes/</loc>
+    <loc>http://localhost:1313/kochbuch/rezepte/one_pot_lasagne/</loc>
     <lastmod>2025-01-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://Elektroenchen.github.io/kochbuch/rezepte/</loc>
+    <loc>http://localhost:1313/kochbuch/rezepte/penne_siciliana/</loc>
     <lastmod>2025-01-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://Elektroenchen.github.io/kochbuch/tags/</loc>
+    <loc>http://localhost:1313/kochbuch/rezepte/porree_crepes/</loc>
     <lastmod>2025-01-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://Elektroenchen.github.io/kochbuch/tags/vegetarisch/</loc>
+    <loc>http://localhost:1313/kochbuch/rezepte/</loc>
     <lastmod>2025-01-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://Elektroenchen.github.io/kochbuch/tags/wirsing/</loc>
+    <loc>http://localhost:1313/kochbuch/tags/</loc>
     <lastmod>2025-01-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://Elektroenchen.github.io/kochbuch/rezepte/wirsingeintopf_kartoffeln_hackfleisch/</loc>
+    <loc>http://localhost:1313/kochbuch/tags/schnelle-k%C3%BCche/</loc>
     <lastmod>2025-01-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://Elektroenchen.github.io/kochbuch/</loc>
+    <loc>http://localhost:1313/kochbuch/tags/sp%C3%A4tzle/</loc>
     <lastmod>2025-01-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://Elektroenchen.github.io/kochbuch/rezepte/fleisch_kaese_strudel/</loc>
+    <loc>http://localhost:1313/kochbuch/tags/speck/</loc>
+    <lastmod>2025-01-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/kochbuch/tags/vegetarisch/</loc>
+    <lastmod>2025-01-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/kochbuch/tags/wirsing/</loc>
+    <lastmod>2025-01-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/kochbuch/rezepte/wirsingeintopf_kartoffeln_hackfleisch/</loc>
+    <lastmod>2025-01-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/kochbuch/</loc>
+    <lastmod>2025-01-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/kochbuch/rezepte/fleisch_kaese_strudel/</loc>
     <lastmod>2025-01-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://Elektroenchen.github.io/kochbuch/categories/gefl%C3%BCgelgerichte/</loc>
+    <loc>http://localhost:1313/kochbuch/categories/gefl%C3%BCgelgerichte/</loc>
     <lastmod>2025-01-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://Elektroenchen.github.io/kochbuch/rezepte/haenchenbrust_curryobst/</loc>
+    <loc>http://localhost:1313/kochbuch/rezepte/haenchenbrust_curryobst/</loc>
     <lastmod>2025-01-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://Elektroenchen.github.io/kochbuch/rezepte/pasta_pesto_verde/</loc>
+    <loc>http://localhost:1313/kochbuch/rezepte/pasta_pesto_verde/</loc>
     <lastmod>2025-01-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://Elektroenchen.github.io/kochbuch/categories/reisgerichte/</loc>
+    <loc>http://localhost:1313/kochbuch/categories/reisgerichte/</loc>
     <lastmod>2025-01-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://Elektroenchen.github.io/kochbuch/rezepte/wok_haehnchen_gemuese/</loc>
+    <loc>http://localhost:1313/kochbuch/rezepte/wok_haehnchen_gemuese/</loc>
     <lastmod>2025-01-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://Elektroenchen.github.io/kochbuch/tags/wokgerichte/</loc>
+    <loc>http://localhost:1313/kochbuch/tags/wokgerichte/</loc>
     <lastmod>2025-01-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://Elektroenchen.github.io/kochbuch/search/</loc>
+    <loc>http://localhost:1313/kochbuch/search/</loc>
   </url>
 </urlset>
