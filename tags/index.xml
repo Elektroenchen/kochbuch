@@ -2,73 +2,73 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Schlagworte on Zimmers Kochbuch</title>
-    <link>http://localhost:1313/kochbuch/tags/</link>
+    <link>https://Elektroenchen.github.io/kochbuch/tags/</link>
     <description>Recent content in Schlagworte on Zimmers Kochbuch</description>
     <generator>Hugo -- 0.140.2</generator>
     <language>de-de</language>
-    <lastBuildDate>Sun, 12 Jan 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/kochbuch/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Eintopf</title>
-      <link>http://localhost:1313/kochbuch/tags/eintopf/</link>
-      <pubDate>Sun, 12 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/kochbuch/tags/eintopf/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Kartoffeln</title>
-      <link>http://localhost:1313/kochbuch/tags/kartoffeln/</link>
-      <pubDate>Sun, 12 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/kochbuch/tags/kartoffeln/</guid>
-      <description></description>
-    </item>
+    <lastBuildDate>Fri, 31 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://Elektroenchen.github.io/kochbuch/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Käse</title>
-      <link>http://localhost:1313/kochbuch/tags/k%C3%A4se/</link>
-      <pubDate>Sun, 12 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/kochbuch/tags/k%C3%A4se/</guid>
+      <link>https://Elektroenchen.github.io/kochbuch/tags/k%C3%A4se/</link>
+      <pubDate>Fri, 31 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://Elektroenchen.github.io/kochbuch/tags/k%C3%A4se/</guid>
       <description></description>
     </item>
     <item>
       <title>Schnelle Küche</title>
-      <link>http://localhost:1313/kochbuch/tags/schnelle-k%C3%BCche/</link>
-      <pubDate>Sun, 12 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/kochbuch/tags/schnelle-k%C3%BCche/</guid>
+      <link>https://Elektroenchen.github.io/kochbuch/tags/schnelle-k%C3%BCche/</link>
+      <pubDate>Fri, 31 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://Elektroenchen.github.io/kochbuch/tags/schnelle-k%C3%BCche/</guid>
       <description></description>
     </item>
     <item>
       <title>Spätzle</title>
-      <link>http://localhost:1313/kochbuch/tags/sp%C3%A4tzle/</link>
-      <pubDate>Sun, 12 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/kochbuch/tags/sp%C3%A4tzle/</guid>
+      <link>https://Elektroenchen.github.io/kochbuch/tags/sp%C3%A4tzle/</link>
+      <pubDate>Fri, 31 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://Elektroenchen.github.io/kochbuch/tags/sp%C3%A4tzle/</guid>
       <description></description>
     </item>
     <item>
       <title>Speck</title>
-      <link>http://localhost:1313/kochbuch/tags/speck/</link>
+      <link>https://Elektroenchen.github.io/kochbuch/tags/speck/</link>
+      <pubDate>Fri, 31 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://Elektroenchen.github.io/kochbuch/tags/speck/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Eintopf</title>
+      <link>https://Elektroenchen.github.io/kochbuch/tags/eintopf/</link>
       <pubDate>Sun, 12 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/kochbuch/tags/speck/</guid>
+      <guid>https://Elektroenchen.github.io/kochbuch/tags/eintopf/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Kartoffeln</title>
+      <link>https://Elektroenchen.github.io/kochbuch/tags/kartoffeln/</link>
+      <pubDate>Sun, 12 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://Elektroenchen.github.io/kochbuch/tags/kartoffeln/</guid>
       <description></description>
     </item>
     <item>
       <title>Vegetarisch</title>
-      <link>http://localhost:1313/kochbuch/tags/vegetarisch/</link>
+      <link>https://Elektroenchen.github.io/kochbuch/tags/vegetarisch/</link>
       <pubDate>Sun, 12 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/kochbuch/tags/vegetarisch/</guid>
+      <guid>https://Elektroenchen.github.io/kochbuch/tags/vegetarisch/</guid>
       <description></description>
     </item>
     <item>
       <title>Wirsing</title>
-      <link>http://localhost:1313/kochbuch/tags/wirsing/</link>
+      <link>https://Elektroenchen.github.io/kochbuch/tags/wirsing/</link>
       <pubDate>Sun, 12 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/kochbuch/tags/wirsing/</guid>
+      <guid>https://Elektroenchen.github.io/kochbuch/tags/wirsing/</guid>
       <description></description>
     </item>
     <item>
       <title>Wokgerichte</title>
-      <link>http://localhost:1313/kochbuch/tags/wokgerichte/</link>
+      <link>https://Elektroenchen.github.io/kochbuch/tags/wokgerichte/</link>
       <pubDate>Sat, 11 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/kochbuch/tags/wokgerichte/</guid>
+      <guid>https://Elektroenchen.github.io/kochbuch/tags/wokgerichte/</guid>
       <description></description>
     </item>
   </channel>
