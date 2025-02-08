@@ -3,5 +3,5 @@
   * `cd C:\Users\Christian\Documents\Hugo\kochbuch`
   * `hugo server -D`erzeugt lokale Version und startet lokalen Server zum Ausprobieren (-D mit Drafts)
   * `hugo` erzeugt lokale Version in public/
-  * Alles von `public/` nach `../kochbuch_ghpages` kopieren: `Copy-Item -Path "C:\Quelle" -Destination "C:\Ziel" -Recurse`
+  * Alles von `public/` nach `../kochbuch_ghpages` kopieren: `Get-ChildItem -Path "C:\Quellordner" -Recurse | Where-Object { $_.FullName -notlike "*\.git*" } | Copy-Item -Destination "C:\Zielordner" -Recurse -Force`
   * git pushen
