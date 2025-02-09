@@ -1,3 +1,9 @@
+**Auschecken**
+* `git clone https://github.com/Elektroenchen/kochbuch.git`
+* `cd kochbuch`
+* `git clone --depth=1 https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod`
+
+**Bearbeiten**
 * Neue Rezepte werden in content/rezepte ergänzt
 * Zum Aktualisieren wie folgt vorgehen:
   * `cd C:\Users\Christian\Documents\Hugo\kochbuch`
