@@ -3,7 +3,7 @@ title: "Wokgericht mit Hähnchen und Gemüse"
 date: 2025-01-11
 draft: false
 categories: ["Reisgerichte"]
-tags: ["Wokgerichte"]
+tags: ["Wokgericht"]
 ---
 
 <div class="container2col">

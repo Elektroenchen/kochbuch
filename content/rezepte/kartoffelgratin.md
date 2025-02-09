@@ -3,7 +3,7 @@ title: "Kartoffelgratin"
 date: 2025-01-12
 draft: false
 categories: ["Beilagen"]
-tags: ["vegetarisch"]
+tags: ["vegetarisch", "Ofengericht"]
 ---
 
 <div class="container2col">

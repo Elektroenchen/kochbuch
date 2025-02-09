@@ -3,7 +3,7 @@ title: "Nudeln mit gerösteten Tomaten und Knoblauch-Ricotta"
 date: 2025-01-12
 draft: false
 categories: ["Nudelgerichte"]
-tags: ["vegetarisch"]
+tags: ["vegetarisch", "Ofengericht"]
 ---
 
 <div class="container2col">
