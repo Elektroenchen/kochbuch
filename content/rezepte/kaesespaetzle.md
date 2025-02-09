@@ -4,6 +4,12 @@ date: 2025-01-31
 draft: false
 categories: ["Hauptgerichte"]
 tags: ["Spätzle", "Käse", "Speck", "Schnelle Küche"]
+cover:
+  image: "images/kaesespaetzle.jpg" # Relativer Pfad zum Bild
+  alt: "Käsespätzle mit Speck und Sahne"
+  caption: "Käsespätzle mit Speck und Sahne"
+  relative: true # Setzt den Pfad relativ zum "static"-Ordner
+  position: "center"
 ---
 
 <div class="container2col">
