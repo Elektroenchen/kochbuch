@@ -21,14 +21,14 @@ tags: ["Eintopf"]
   - 500 g passierte Tomaten  
   - 400 g stückige Tomaten  
   - 500 ml Rinderbrühe  
-  - 160 g breite Bandnudeln  
+  - 250 g breite Bandnudeln  
   - 1 TL getrocknetes Basilikum  
   - 1 TL getrockneter Oregano  
-  - 1–2 EL Parmesan (zum Würzen)  
   - 125 g Ricotta  
   - 50 g geriebener Parmesan  
   - 50 g geriebener Gouda  
-
+  - 1–2 EL Parmesan (zum Würzen)  
+  
   </div>
 
   <div class="zubereitung">
