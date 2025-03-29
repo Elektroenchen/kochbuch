@@ -1,6 +1,6 @@
 ---
 title: "Panna Cotta"
-date: 2025-02-15
+date: 2025-03-29
 draft: false
 categories: ["Desserts"]
 tags: ["Panna Cotta", "italienisch", "süß", "einfach"]
