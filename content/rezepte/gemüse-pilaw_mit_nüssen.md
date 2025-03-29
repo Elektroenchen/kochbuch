@@ -17,7 +17,7 @@ cover:
   <div class="zutaten">
 
   **Zutaten für 4 Personen**  
-  - 4 kleine Zucchini  
+  - 3 Zucchini  
   - 2 Möhren  
   - 2 rote Zwiebeln  
   - 2 Knoblauchzehen  
