@@ -22,9 +22,9 @@ cover:
   - 400 g Kidneybohnen  
   - 200 g Mais  
   - 500 ml Rinderbrühe (oder Gemüsebrühe)  
-  - 1 Paprika  
+  - je 1 rote und 1 gelbe Paprika 
   - 1 Zwiebel  
-  - 2 Knoblauchzehen  
+  - 2 Knoblauchzehen (nach Geschmack)
   - 1 Lorbeerblatt  
   - 1 Zimtstange  
   - 1 EL Tomatenmark  
@@ -43,7 +43,7 @@ cover:
   - Knoblauch und Zwiebel schälen.  
   - Paprika waschen und in kleine Würfel schneiden.  
   - Öl in einer Pfanne erhitzen, Knoblauch pressen und in die Pfanne geben.  
-  - Zwiebeln hinzufügen und kurz andünsten.  
+  - Zwiebeln und ggf. Knoblauch hinzufügen und kurz andünsten.  
 
   **Schritt 2:**  
   - Hackfleisch dazugeben und krümelig anbraten.  
