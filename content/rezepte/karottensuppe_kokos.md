@@ -1,6 +1,6 @@
 ---
 title: "Karottensuppe mit Ingwer und Kokosmilch"
-date: 2025-04-10
+date: 2025-05-03
 draft: false
 categories: ["Suppen"]
 tags: ["Karotten", "Kokos", "vegetarisch", "vegan", "Ingwer", "scharf"]
