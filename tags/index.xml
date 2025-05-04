@@ -4,50 +4,78 @@
     <title>Schlagworte on Zimmers Kochbuch</title>
     <link>https://Elektroenchen.github.io/kochbuch/tags/</link>
     <description>Recent content in Schlagworte on Zimmers Kochbuch</description>
-    <generator>Hugo -- 0.140.2</generator>
+    <generator>Hugo -- 0.147.1</generator>
     <language>de-de</language>
-    <lastBuildDate>Thu, 10 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 04 May 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://Elektroenchen.github.io/kochbuch/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Ingwer</title>
-      <link>https://Elektroenchen.github.io/kochbuch/tags/ingwer/</link>
-      <pubDate>Thu, 10 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://Elektroenchen.github.io/kochbuch/tags/ingwer/</guid>
+      <title>Gemüse</title>
+      <link>https://Elektroenchen.github.io/kochbuch/tags/gem%C3%BCse/</link>
+      <pubDate>Sun, 04 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://Elektroenchen.github.io/kochbuch/tags/gem%C3%BCse/</guid>
       <description></description>
     </item>
     <item>
-      <title>Karotten</title>
-      <link>https://Elektroenchen.github.io/kochbuch/tags/karotten/</link>
-      <pubDate>Thu, 10 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://Elektroenchen.github.io/kochbuch/tags/karotten/</guid>
+      <title>Mediterran</title>
+      <link>https://Elektroenchen.github.io/kochbuch/tags/mediterran/</link>
+      <pubDate>Sun, 04 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://Elektroenchen.github.io/kochbuch/tags/mediterran/</guid>
       <description></description>
     </item>
     <item>
-      <title>Kokos</title>
-      <link>https://Elektroenchen.github.io/kochbuch/tags/kokos/</link>
-      <pubDate>Thu, 10 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://Elektroenchen.github.io/kochbuch/tags/kokos/</guid>
+      <title>Pfannengericht</title>
+      <link>https://Elektroenchen.github.io/kochbuch/tags/pfannengericht/</link>
+      <pubDate>Sun, 04 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://Elektroenchen.github.io/kochbuch/tags/pfannengericht/</guid>
       <description></description>
     </item>
     <item>
-      <title>Scharf</title>
-      <link>https://Elektroenchen.github.io/kochbuch/tags/scharf/</link>
-      <pubDate>Thu, 10 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://Elektroenchen.github.io/kochbuch/tags/scharf/</guid>
+      <title>Schnell</title>
+      <link>https://Elektroenchen.github.io/kochbuch/tags/schnell/</link>
+      <pubDate>Sun, 04 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://Elektroenchen.github.io/kochbuch/tags/schnell/</guid>
       <description></description>
     </item>
     <item>
       <title>Vegan</title>
       <link>https://Elektroenchen.github.io/kochbuch/tags/vegan/</link>
-      <pubDate>Thu, 10 Apr 2025 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 04 May 2025 00:00:00 +0000</pubDate>
       <guid>https://Elektroenchen.github.io/kochbuch/tags/vegan/</guid>
       <description></description>
     </item>
     <item>
       <title>Vegetarisch</title>
       <link>https://Elektroenchen.github.io/kochbuch/tags/vegetarisch/</link>
-      <pubDate>Thu, 10 Apr 2025 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 04 May 2025 00:00:00 +0000</pubDate>
       <guid>https://Elektroenchen.github.io/kochbuch/tags/vegetarisch/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ingwer</title>
+      <link>https://Elektroenchen.github.io/kochbuch/tags/ingwer/</link>
+      <pubDate>Sat, 03 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://Elektroenchen.github.io/kochbuch/tags/ingwer/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Karotten</title>
+      <link>https://Elektroenchen.github.io/kochbuch/tags/karotten/</link>
+      <pubDate>Sat, 03 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://Elektroenchen.github.io/kochbuch/tags/karotten/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Kokos</title>
+      <link>https://Elektroenchen.github.io/kochbuch/tags/kokos/</link>
+      <pubDate>Sat, 03 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://Elektroenchen.github.io/kochbuch/tags/kokos/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Scharf</title>
+      <link>https://Elektroenchen.github.io/kochbuch/tags/scharf/</link>
+      <pubDate>Sat, 03 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://Elektroenchen.github.io/kochbuch/tags/scharf/</guid>
       <description></description>
     </item>
     <item>
@@ -132,13 +160,6 @@
       <link>https://Elektroenchen.github.io/kochbuch/tags/reis/</link>
       <pubDate>Sat, 15 Feb 2025 00:00:00 +0000</pubDate>
       <guid>https://Elektroenchen.github.io/kochbuch/tags/reis/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Schnell</title>
-      <link>https://Elektroenchen.github.io/kochbuch/tags/schnell/</link>
-      <pubDate>Sat, 15 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://Elektroenchen.github.io/kochbuch/tags/schnell/</guid>
       <description></description>
     </item>
     <item>
