@@ -16,11 +16,10 @@ tags: ["vegetarisch"]
   - 2 Bund Basilikum (160–200 g)  
   - Salz  
   - 2 EL Olivenöl  
-  - 100 ml Gemüsebrühe  
+  - 250 ml Gemüsebrühe  
   - Pfeffer  
   - 2 Knoblauchzehen  
   - 4 grüne Paprikaschoten  
-  - 150 ml Gemüsebrühe  
 
   </div>
 
