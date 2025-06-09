@@ -16,7 +16,7 @@ tags: ["vegetarisch"]
   - 2 Bund Basilikum (160–200 g)  
   - Salz  
   - 2 EL Olivenöl  
-  - 250 ml Gemüsebrühe  
+  - 200 ml Gemüsebrühe  
   - Pfeffer  
   - 2 Knoblauchzehen  
   - 4 grüne Paprikaschoten  
@@ -28,9 +28,9 @@ tags: ["vegetarisch"]
   **Zubereitung**  
   1. Muschelnudeln nach Packungsanweisung in Salzwasser bissfest kochen.  
   2. Käse fein reiben.  
-  3. Basilikum abspülen, trocken schleudern und grob hacken. Käse, Basilikum, Salz, 2 EL Olivenöl und 100 ml Gemüsebrühe mit einem Stabmixer pürieren. Mit Pfeffer abschmecken.  
+  3. Basilikum abspülen, trocken schleudern und grob hacken. Käse, Basilikum, Salz, 2 EL Olivenöl und 75 ml Gemüsebrühe mit einem Stabmixer pürieren. Mit Pfeffer abschmecken.  
   4. Knoblauch abziehen, fein würfeln. Paprikaschoten vierteln, Stängel, Kerne und Trennwände entfernen. Paprika in mittelgroße Stücke schneiden.  
-  5. Knoblauch, Paprikastücke und 150 ml Gemüsebrühe in einem kleinen Topf einmal aufkochen und 3 Minuten zugedeckt dünsten.  
+  5. Knoblauch, Paprikastücke und die restliche Gemüsebrühe in einem kleinen Topf einmal aufkochen und 3 Minuten zugedeckt dünsten.  
   6. Abgetropfte Nudeln und Paprika (mit Sud) unter das Pesto rühren und sofort anrichten.  
 
   </div>
