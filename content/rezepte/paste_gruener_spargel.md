@@ -5,7 +5,7 @@ draft: false
 categories: ["Hauptgerichte"]
 tags: ["Pasta", "Spargel", "vegetarisch", "saisonal", "schnell"]
 cover:
-  image: "images/pasta_gruener_spargel.jpg" # Relativer Pfad zum Bild
+  image: "images/pasta_gruener_spargel.JPG" # Relativer Pfad zum Bild
   alt: "Pasta mit grünem Spargel in Zitronen-Buttersoße"
   caption: "Pasta mit grünem Spargel in Zitronen-Buttersoße"
   relative: true

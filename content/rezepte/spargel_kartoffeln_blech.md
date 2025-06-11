@@ -5,7 +5,7 @@ draft: false
 categories: ["Hauptgerichte"]
 tags: ["vegetarisch", "Spargel", "Kartoffeln", "aus dem Ofen", "Frühling"]
 cover:
-  image: "images/spargel_kartoffeln_blech.png"
+  image: "images/spargel_kartoffeln_blech.PNG"
   alt: "Grüner Spargel mit Kartoffeln vom Blech"
   caption: "Ofengemüse mit Vinaigrette und frischer Kresse"
   relative: true
