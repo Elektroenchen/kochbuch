@@ -19,7 +19,7 @@ cover:
   **Zutaten für 4 Portionen**  
   - 500 g Linguine  
   - 2 Bio-Zitronen  
-  - ca. 160 ml sehr gutes Olivenöl  
+  - ca. 120 ml sehr gutes Olivenöl  
   - ca. 160 g Parmesan, frisch gerieben  
   - etwas frischer Basilikum  
   - Salz & Pfeffer aus der Mühle  

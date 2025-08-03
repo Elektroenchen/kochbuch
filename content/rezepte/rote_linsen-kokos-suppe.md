@@ -21,7 +21,7 @@ cover:
   - 2 Knoblauchzehen (nach Geschmack) 
   - 2 EL Öl  
   - 350 g rote Linsen  
-  - 1 kleine Dose Tomaten (ca. 425 ml)  
+  - 1 kleine Dose Pizzatomaten (ca. 425 ml)  
   - 1 Dose Kokosmilch (ca. 400 ml)  
   - 500 ml Gemüsebrühe  
   - 2 TL Chilipulver  
