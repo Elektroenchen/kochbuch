@@ -5,7 +5,7 @@ draft: false
 categories: ["Suppen"]
 tags: ["Kürbis", "Butternut", "vegetarisch"]
 cover:
-  image: "images/butternut_kuerbissuppe.jpg" # Relativer Pfad zum Bild
+  image: "images/butternut_kürbissuppe.jpg" # Relativer Pfad zum Bild
   alt: "Butternut‑Kürbissuppe"
   caption: "Cremige Butternut‑Kürbissuppe mit gerösteten Kürbiskernen"
   relative: true
