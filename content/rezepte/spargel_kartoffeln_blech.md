@@ -5,7 +5,7 @@ draft: false
 categories: ["Hauptgerichte"]
 tags: ["vegetarisch", "Spargel", "Kartoffeln", "aus dem Ofen", "Frühling"]
 cover:
-  image: "images/spargel_kartoffeln_blech.png"
+  image: "images/spargelblech.png"
   alt: "Grüner Spargel mit Kartoffeln vom Blech"
   caption: "Grüner Spargel mit Kartoffeln vom Blech"
   relative: true
