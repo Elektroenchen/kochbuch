@@ -40,7 +40,7 @@ cover:
 3. Gemüsebrühe angießen, Deckel auflegen und bei mittlerer Hitze ca. 20 Minuten köcheln lassen.  
 4. In einer Pfanne Kürbiskerne 2‑3 Minuten bei mittlerer Hitze anrösten.  
 5. Suppe mit einem Pürierstab glatt pürieren. Crème fraîche unterrühren, mit Muskatnuss, Cayennepfeffer und Salz abschmecken.  
-6. Suppe auf vier Schalen verteilen, mit Crème fraîche verfeinern, geröstete Kürbiskerne und optional frische Kräuter darüber geben.  
+6. Suppe auf vier Schalen verteilen, geröstete Kürbiskerne und optional frische Kräuter darüber geben.  
 
 </div>
 
