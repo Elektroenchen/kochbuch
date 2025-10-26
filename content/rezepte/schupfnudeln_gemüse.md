@@ -24,7 +24,7 @@ cover:
 - 1 rote Paprikaschote (in ca. 1,5 cm Stücke)  
 - 2 EL Pinienkerne (geröstet)  
 - 2 EL Rapsöl
-- 400 g Schupfnudeln (aus dem Kühlregal)  
+- 800 g Schupfnudeln (aus dem Kühlregal)  
 - 150 ml Gemüsebrühe  
 - 4 EL Saure Sahne (10 % Fett)  
 - Salz & Pfeffer (nach Geschmack)  
