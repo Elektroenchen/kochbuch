@@ -13,7 +13,7 @@ tags: ["Ofengericht"]
   **Zutaten**  
   - 250 g Gabelspaghetti  
   - 1 große Zwiebel  
-  - 250 g gekochter Schinken  
+  - 200 g gekochter Schinken  
   - Petersilie (nach Geschmack)  
   - ¼ l Milch  
   - 1 Ei  
