@@ -5,7 +5,7 @@ draft: false
 categories: ["Kuchen"]
 tags: ["Käsekuchen", "Himbeeren", "Backen"]
 cover:
-  image: "images/himbeer_kaesekuchen.jpg"
+  image: "images/himbeer-kaesekuchen.jpg"
   alt: "Himbeer-Käsekuchen"
   caption: "Himbeer-Käsekuchen"
   relative: true
