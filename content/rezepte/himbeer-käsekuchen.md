@@ -50,7 +50,7 @@ cover:
 #### Teig
 
 1. Mehl, Backpulver in eine Schüssel sieben. Mit zimmerwarmer Butter, Zucker, Ei rasch zu einem glatten Teig verkneten. In Klarsichtfolie wickeln und etwa 1 Std. kühl stellen.  
-2. Backofen vorheizen. Teig auf einer bemehlten Arbeitsfläche ausrollen. Springform fetten, mit dem Teig auskleiden, ca. 15 Min. vorbacken. Auskühlen lassen.
+2. Backofen auf 160° vorheizen. Teig auf einer bemehlten Arbeitsfläche ausrollen. Springform fetten, mit dem Teig auskleiden, ca. 15 Min. vorbacken. Auskühlen lassen.
 
 #### Creme
 
@@ -60,9 +60,8 @@ cover:
 #### Backen
 
 1. Die Frischkäsecreme auf den vorgebackenen Boden geben und sorgfältig glattstreichen.  
-2. Ca. 60 Min. backen.  
-3. Danach den Kuchen nach rund 30 Min. mit Backpapier oder Alufolie abdecken, damit die Oberfläche nicht zu sehr bräunt.  
-4. Backofen ausschalten. Den Kuchen 15 Min. darin ruhen lassen. Herausnehmen, aus der Springform lösen und auf ein Kuchengitter stürzen. Vollständig auskühlen lassen.
+2. Ca. 60 Min. backen. Dabei den Kuchen nach rund 30 Min. mit Backpapier oder Alufolie abdecken, damit die Oberfläche nicht zu sehr bräunt.  
+3. Backofen ausschalten. Den Kuchen 15 Min. darin ruhen lassen. Herausnehmen, aus der Springform lösen und auf ein Kuchengitter stürzen. Vollständig auskühlen lassen.
 
 #### Fertigstellung
 
