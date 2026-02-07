@@ -1,13 +1,13 @@
 ---
-title: "Hähnchen-Kichererbsen-Eintopf"
+title: "Hähnchen-Kichererbsen-Eintopf mit Brokkoli & Kokosmilch"
 date: 2026-02-07
 draft: false
 categories: ["Hauptgerichte"]
-tags: ["Eintopf", "Hähnchen", "Kichererbsen", "One-Pot"]
+tags: ["Eintopf", "Hähnchen", "Kichererbsen", "Curry"]
 cover:
   image: "images/haehnchen_kichererbsen_eintopf.jpg"
-  alt: "Hähnchen-Kichererbsen-Eintopf"
-  caption: "Herzhafter Eintopf mit Hähnchen und Kichererbsen"
+  alt: "Hähnchen-Kichererbsen-Eintopf mit Brokkoli"
+  caption: "Hähnchen-Kichererbsen-Eintopf mit Brokkoli und Kokosmilch"
   relative: true
   position: "center"
 ---
@@ -18,20 +18,19 @@ cover:
 
 **Zutaten für 4 Portionen**
 
-- 600 g Hähnchenbrustfilet  
-- 2 Dosen Kichererbsen (je ca. 240 g Abtropfgewicht)  
-- 1 große Zwiebel  
-- 2 Knoblauchzehen  
-- 2 Möhren  
-- 1 rote Paprikaschote  
-- 2 EL Olivenöl  
-- 1 TL Kreuzkümmel (gemahlen)  
-- 1 TL Paprikapulver (edelsüß)  
-- ½ TL Chiliflocken (nach Geschmack)  
-- 1 EL Tomatenmark  
-- 800 ml Hühnerbrühe  
-- Salz, Pfeffer  
-- Frische Petersilie oder Koriander zum Servieren  
+- 1 Bund Frühlingszwiebeln  
+- 20 g Ingwer (frisch)  
+- 300 g Brokkoli  
+- 350 g Hähnchenbrust  
+- 1 Dose Kichererbsen (265 g Abtropfgewicht)  
+- 2 EL neutrales Öl  
+- 70 g gelbe Currypaste  
+- 400 ml Kokosmilch  
+- 600 ml Hühnerbrühe  
+- Salz  
+- 0,5 EL brauner Zucker  
+- 3 EL Limettensaft  
+- 4 EL Röstzwiebeln  
 
 </div>
 
@@ -40,29 +39,26 @@ cover:
 **Zubereitung**
 
 **Schritt 1:**  
-Hähnchenbrust trocken tupfen und in mundgerechte Stücke schneiden.  
-Zwiebel und Knoblauch schälen und fein hacken.  
-Möhren schälen und in Scheiben schneiden, Paprika würfeln.
+Frühlingszwiebeln putzen.  
+Das Weiße in ca. ½ cm breite Stücke schneiden.  
+Das Hellgrüne schräg in feine Ringe schneiden und beiseitestellen.  
+Ingwer schälen und in feine Scheiben schneiden.  
+Brokkoli putzen und in Röschen teilen, den Strunk schälen und würfeln.  
+Hähnchenbrust quer in ca. ½ cm breite Scheiben schneiden.  
+Kichererbsen abgießen, abspülen und abtropfen lassen.
 
 **Schritt 2:**  
-Olivenöl in einem großen Topf erhitzen.  
-Hähnchenstücke rundum anbraten, salzen, pfeffern und aus dem Topf nehmen.
+Öl in einem großen Topf erhitzen.  
+Weiße Frühlingszwiebelstücke und Ingwer bei mittlerer Hitze ca. 3 Minuten dünsten.  
+Currypaste zugeben und unter Rühren kurz mitdünsten.  
+Kokosmilch und Hühnerbrühe zugießen, aufkochen und ca. 5 Minuten köcheln lassen.
 
 **Schritt 3:**  
-Zwiebel und Knoblauch im gleichen Topf glasig dünsten.  
-Möhren und Paprika zugeben und kurz mitbraten.
-
-**Schritt 4:**  
-Tomatenmark, Kreuzkümmel, Paprikapulver und Chili einrühren und kurz anschwitzen.  
-Kichererbsen (abgespült und abgetropft) zugeben.
-
-**Schritt 5:**  
-Mit Hühnerbrühe aufgießen, Hähnchen wieder in den Topf geben und alles ca.  
-20–25 Minuten sanft köcheln lassen.
-
-**Schritt 6:**  
-Eintopf mit Salz und Pfeffer abschmecken und mit frisch gehackter Petersilie  
-oder Koriander servieren.
+Hähnchen zugeben und ca. 5 Minuten garen.  
+Brokkoli zufügen und weitere 4 Minuten mitgaren.  
+Kichererbsen unterrühren und ca. 2 Minuten im Eintopf erwärmen.  
+Mit Salz, braunem Zucker und Limettensaft abschmecken.  
+Mit den grünen Frühlingszwiebeln und Röstzwiebeln bestreut servieren.
 
 </div>
 
