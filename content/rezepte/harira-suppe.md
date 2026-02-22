@@ -1,5 +1,5 @@
 ---
-title: "Harira – Kichererbsen-Linsen-Suppe (schnelle Version)"
+title: "Harira – Kichererbsen-Linsen-Suppe"
 date: 2026-02-22
 draft: false
 categories: ["Suppen", "Hauptgerichte"]
