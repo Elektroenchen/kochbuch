@@ -52,12 +52,6 @@
             }
         }
 
-        @media (prefers-color-scheme: light) {
-            .list::-webkit-scrollbar-thumb {
-                border-color: var(--code-bg);
-            }
-        }
-
     </style>
 </noscript>
 <script>
@@ -74,26 +68,26 @@
 </script><meta property="og:url" content="https://Elektroenchen.github.io/kochbuch/tags/k%C3%BCrbis/">
   <meta property="og:site_name" content="Zimmers Kochbuch">
   <meta property="og:title" content="Kürbis">
-  <meta property="og:locale" content="de-de">
+  <meta property="og:locale" content="de_de">
   <meta property="og:type" content="website">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Kürbis">
-<meta name="twitter:description" content="">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Kürbis">
 
 </head>
 <body class="list" id="top">
     <header class="header">
-    <nav class="nav">
+    <nav class="header-nav">
         <div class="logo">
             <a href="https://Elektroenchen.github.io/kochbuch/" accesskey="h" title="Zimmers Kochbuch (Alt + H)">Zimmers Kochbuch</a>
             <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
                         <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
                     </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
                         <circle cx="12" cy="12" r="5"></circle>
@@ -109,7 +103,7 @@
                 </button>
             </div>
         </div>
-        <ul id="menu">
+        <ul id="menu" class="menu">
             <li>
                 <a href="https://Elektroenchen.github.io/kochbuch/search/" title="Suchen">
                     <span>Suchen</span>
@@ -151,7 +145,9 @@ Kürbis waschen, entkernen und in kleine Würfel schneiden. Schalotten und Knobl
 Pasta nach Packungsanweisung in Salzwasser al dente kochen. Schritt 3:
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-10-25 00:00:00 +0000 UTC'>October 25, 2025</span></footer>
+  <footer class="entry-footer">
+
+<span title='2025-10-25 00:00:00 +0000 UTC'>October 25, 2025</span></footer>
   <a class="entry-link" aria-label="post link to Pasta mit Hokkaido-Kürbis" href="https://Elektroenchen.github.io/kochbuch/rezepte/pasta_hokkaido-k%C3%BCrbis/"></a>
 </article>
 
@@ -168,7 +164,9 @@ Pasta nach Packungsanweisung in Salzwasser al dente kochen. Schritt 3:
 1 Butternuss‑Kürbis (ca. 1 kg) 2 Zwiebeln 40 g Butter 2 TL Salz 800 ml Gemüsebrühe 200 g Crème fraîche Geriebene Muskatnuss ½ TL Cayennepfeffer Kürbiskerne zum Rösten Optional: frische Kräuter zum Garnieren Zubereitung
 Kürbis waschen, halbieren, Kerne entfernen. Kürbis schälen und grob würfeln. Zwiebeln abziehen und würfeln. Butter in einem großen Topf zerlassen. Kürbis‑ und Zwiebelwürfel hinzufügen und 1‑2 Minuten anschwitzen. Salz zugeben und das Gemüse weitere 2 Minuten dünsten. Gemüsebrühe angießen, Deckel auflegen und bei mittlerer Hitze ca. 20 Minuten köcheln lassen. In einer Pfanne Kürbiskerne 2‑3 Minuten bei mittlerer Hitze anrösten. Suppe mit einem Pürierstab glatt pürieren. Crème fraîche unterrühren, mit Muskatnuss, Cayennepfeffer und Salz abschmecken. Suppe auf vier Schalen verteilen, geröstete Kürbiskerne und optional frische Kräuter darüber geben. </p>
   </div>
-  <footer class="entry-footer"><span title='2025-10-21 00:00:00 +0000 UTC'>October 21, 2025</span></footer>
+  <footer class="entry-footer">
+
+<span title='2025-10-21 00:00:00 +0000 UTC'>October 21, 2025</span></footer>
   <a class="entry-link" aria-label="post link to Butternut‑Kürbissuppe" href="https://Elektroenchen.github.io/kochbuch/rezepte/butternut_k%C3%BCrbissuppe/"></a>
 </article>
     </main>
@@ -176,15 +174,19 @@ Kürbis waschen, halbieren, Kerne entfernen. Kürbis schälen und grob würfeln.
 <footer class="footer">
         <span>&copy; 2026 <a href="https://Elektroenchen.github.io/kochbuch/">Zimmers Kochbuch</a></span> · 
 
+    
+    
     <span>
         Powered by
-        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
         <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
     </span>
 </footer>
-<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
     </svg>
 </a>
 
@@ -223,14 +225,13 @@ Kürbis waschen, halbieren, Kerne entfernen. Kürbis schälen und grob würfeln.
 
 </script>
 <script>
-    var mybutton = document.getElementById("top-link");
+    var toplink = document.getElementById("top-link");
     window.onscroll = function () {
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-            mybutton.style.visibility = "visible";
-            mybutton.style.opacity = "1";
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
         } else {
-            mybutton.style.visibility = "hidden";
-            mybutton.style.opacity = "0";
+            toplink.classList.add("hidden");
         }
     };
 

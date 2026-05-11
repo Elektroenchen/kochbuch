@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://Elektroenchen.github.io/kochbuch/categories/desserts/</loc>
+    <lastmod>2026-05-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://Elektroenchen.github.io/kochbuch/rezepte/waffeln/</loc>
+    <lastmod>2026-05-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://Elektroenchen.github.io/kochbuch/categories/geb%C3%A4ck/</loc>
+    <lastmod>2026-05-11T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://Elektroenchen.github.io/kochbuch/tags/gem%C3%BCse/</loc>
     <lastmod>2026-05-11T00:00:00+00:00</lastmod>
   </url><url>
@@ -12,6 +21,9 @@
     <lastmod>2026-05-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://Elektroenchen.github.io/kochbuch/categories/</loc>
+    <lastmod>2026-05-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://Elektroenchen.github.io/kochbuch/tags/klassiker/</loc>
     <lastmod>2026-05-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://Elektroenchen.github.io/kochbuch/tags/ofengericht/</loc>
@@ -26,7 +38,13 @@
     <loc>https://Elektroenchen.github.io/kochbuch/tags/</loc>
     <lastmod>2026-05-11T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://Elektroenchen.github.io/kochbuch/tags/s%C3%BC%C3%9Fspeise/</loc>
+    <lastmod>2026-05-11T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://Elektroenchen.github.io/kochbuch/tags/vegetarisch/</loc>
+    <lastmod>2026-05-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://Elektroenchen.github.io/kochbuch/tags/waffeln/</loc>
     <lastmod>2026-05-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://Elektroenchen.github.io/kochbuch/</loc>
@@ -247,9 +265,6 @@
   </url><url>
     <loc>https://Elektroenchen.github.io/kochbuch/rezepte/rote_linsen-kokos-suppe/</loc>
     <lastmod>2025-04-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://Elektroenchen.github.io/kochbuch/categories/desserts/</loc>
-    <lastmod>2025-03-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://Elektroenchen.github.io/kochbuch/tags/einfach/</loc>
     <lastmod>2025-03-29T00:00:00+00:00</lastmod>
