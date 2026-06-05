@@ -19,18 +19,18 @@ cover:
 ## Zutaten für 4 Personen
 
 - 4 Lachsfilets
-- Schwarzer Reis
-- Zuckerschoten
-- Petersilie
-- Zitronen
-- Sojasauce
-- Olivenöl
-- Mandelstifte
-- Mehl
+- 250 g Schwarzer Reis
+- 200 g Zuckerschoten
+- 2 Zitronen
+- 20 ml Sojasauce
+- 3 EL Olivenöl
+- 40 g Mandelstifte
+- 2 EL Mehl
+- 40 g Petersilie
 - Thymianzweige
 - Knoblauchzehen
-- Butter
-- Brauner Zucker
+- 40 g Butter
+- 2 TL Brauner Zucker
 - Salz
 - Pfeffer
 
