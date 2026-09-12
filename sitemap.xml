@@ -2,10 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://Elektroenchen.github.io/kochbuch/tags/dill/</loc>
+    <lastmod>2026-09-12T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://Elektroenchen.github.io/kochbuch/tags/eintopf/</loc>
     <lastmod>2026-09-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://Elektroenchen.github.io/kochbuch/categories/eint%C3%B6pfe/</loc>
+    <lastmod>2026-09-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://Elektroenchen.github.io/kochbuch/tags/gnocchi/</loc>
+    <lastmod>2026-09-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://Elektroenchen.github.io/kochbuch/rezepte/gnocchi_stremellachs_dill/</loc>
     <lastmod>2026-09-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://Elektroenchen.github.io/kochbuch/categories/hauptgerichte/</loc>
@@ -20,6 +29,9 @@
     <loc>https://Elektroenchen.github.io/kochbuch/categories/</loc>
     <lastmod>2026-09-12T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://Elektroenchen.github.io/kochbuch/tags/lachs/</loc>
+    <lastmod>2026-09-12T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://Elektroenchen.github.io/kochbuch/tags/linsen/</loc>
     <lastmod>2026-09-12T00:00:00+00:00</lastmod>
   </url><url>
@@ -30,6 +42,9 @@
     <lastmod>2026-09-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://Elektroenchen.github.io/kochbuch/rezepte/schneller_sp%C3%A4tsommereintopf/</loc>
+    <lastmod>2026-09-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://Elektroenchen.github.io/kochbuch/tags/stremellachs/</loc>
     <lastmod>2026-09-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://Elektroenchen.github.io/kochbuch/tags/vegetarisch/</loc>
@@ -54,9 +69,6 @@
     <lastmod>2026-09-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://Elektroenchen.github.io/kochbuch/tags/fisch/</loc>
-    <lastmod>2026-06-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://Elektroenchen.github.io/kochbuch/tags/lachs/</loc>
     <lastmod>2026-06-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://Elektroenchen.github.io/kochbuch/rezepte/lachsfilet_zuckerschoten_reis/</loc>
@@ -151,9 +163,6 @@
   </url><url>
     <loc>https://Elektroenchen.github.io/kochbuch/tags/mexikanisch/</loc>
     <lastmod>2025-11-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://Elektroenchen.github.io/kochbuch/tags/gnocchi/</loc>
-    <lastmod>2025-11-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://Elektroenchen.github.io/kochbuch/rezepte/gnocci-spinat-pfanne/</loc>
     <lastmod>2025-11-16T00:00:00+00:00</lastmod>
