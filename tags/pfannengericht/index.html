@@ -146,11 +146,15 @@ Schritt 2:
 Etwas Butter in einer großen Pfanne erhitzen. Gnocchi darin anbraten, bis sie Farbe bekommen. Herausnehmen und beiseitestellen.
 Schritt 3:
 Restliche Butter in die Pfanne geben, Schalotten und Knoblauch anschwitzen.
-...</p>
+Schritt 4:
+Spinat hinzufügen und zusammenfallen lassen. Sahne zugießen und alles mit Salz und Pfeffer würzen. Kurz einköcheln lassen.
+Schritt 5:
+Gnocchi und Parmesan dazugeben, gut verrühren und sofort servieren.
+</p>
   </div>
   <footer class="entry-footer">
 
-<span title='2025-11-16 00:00:00 +0000 UTC'>November 16, 2025</span></footer>
+<span title='2025-11-16T00:00:00+00:00'>16. November 2025</span></footer>
   <a class="entry-link" aria-label="post link to Gnocchi-Spinat-Pfanne" href="https://Elektroenchen.github.io/kochbuch/rezepte/gnocci-spinat-pfanne/"></a>
 </article>
 
@@ -169,7 +173,7 @@ Zwiebel abziehen und würfeln. Lauch putzen, längs halbieren, waschen und in Ri
   </div>
   <footer class="entry-footer">
 
-<span title='2025-10-25 00:00:00 +0000 UTC'>October 25, 2025</span></footer>
+<span title='2025-10-25T00:00:00+00:00'>25. Oktober 2025</span></footer>
   <a class="entry-link" aria-label="post link to Schupfnudeln mit Gemüse" href="https://Elektroenchen.github.io/kochbuch/rezepte/schupfnudeln_gem%C3%BCse/"></a>
 </article>
 
@@ -186,11 +190,12 @@ Zwiebel abziehen und würfeln. Lauch putzen, längs halbieren, waschen und in Ri
 4 Schalotten (ca. 100 g) 3 Knoblauchzehen 2 Möhren (ca. 200 g) 1 rote Paprika (ca. 200 g) 1 gelbe Paprika (ca. 200 g) 1 Zucchini (ca. 350 g) 1 TL gerebelter Thymian 4 EL Olivenöl 2 EL dunkler Balsamico-Essig 2 EL Ahornsirup (alternativ flüssiger Honig) ½ TL Salz ¼ TL schwarzer Pfeffer aus der Mühle ¼ TL Meersalz (zum Servieren) Zubereitung
 Vorbereitung
 Schalotten schälen und je nach Größe halbieren oder vierteln. Knoblauch schälen und grob schneiden. Möhren schräg in dünne Scheiben schneiden. Paprika entkernen und in ca. 2,5 cm Stücke schneiden. Zucchini in ca. 1 cm dicke Scheiben schneiden. Anbraten
-...</p>
+Öl in einer großen Pfanne erhitzen. Schalotten, Knoblauch, Möhren, Paprika und Zucchini zugeben. Mit gerebeltem Thymian, Essig, Ahornsirup, Salz und Pfeffer würzen. Alles gut vermengen und bei hoher Hitze 8–10 Minuten braten. Servieren
+Mit Meersalz bestreuen. Nach Wunsch mit Feta oder körnigem Frischkäse ergänzen. </p>
   </div>
   <footer class="entry-footer">
 
-<span title='2025-05-04 00:00:00 +0000 UTC'>May 4, 2025</span></footer>
+<span title='2025-05-04T00:00:00+00:00'>4. Mai 2025</span></footer>
   <a class="entry-link" aria-label="post link to Bunte Gemüsepfanne mit mediterraner Würze" href="https://Elektroenchen.github.io/kochbuch/rezepte/gem%C3%BCsepfanne_mediterran/"></a>
 </article>
     </main>
@@ -223,22 +228,34 @@ Schalotten schälen und je nach Größe halbieren oder vierteln. Knoblauch schä
             menu.scrollLeft = parseInt(scrollPosition, 10);
         }
         
-        menu.onscroll = function () {
-            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
-        }
+        
+        let menuScrollTimeout;
+        menu.addEventListener("scroll", function () {
+            clearTimeout(menuScrollTimeout);
+            menuScrollTimeout = setTimeout(function () {
+                localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+            }, 150);
+        }, { passive: true });
     }
 
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener("click", function (e) {
             e.preventDefault();
             var id = this.getAttribute("href").substr(1);
+            const target = document.querySelector(`[id='${decodeURIComponent(id)}']`);
             if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                target.scrollIntoView({
                     behavior: "smooth"
                 });
             } else {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+                target.scrollIntoView();
             }
+            
+            
+            if (target.tabIndex < 0 && !target.hasAttribute("tabindex")) {
+                target.setAttribute("tabindex", "-1");
+            }
+            target.focus({ preventScroll: true });
             if (id === "top") {
                 history.replaceState(null, null, " ");
             } else {
@@ -250,14 +267,20 @@ Schalotten schälen und je nach Größe halbieren oder vierteln. Knoblauch schä
 </script>
 <script>
     var toplink = document.getElementById("top-link");
-    window.onscroll = function () {
-        const scrollThreshold = window.innerHeight;
-        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
-            toplink.classList.remove("hidden");
-        } else {
-            toplink.classList.add("hidden");
+    var scrollTicking = false;
+    
+    window.addEventListener("scroll", function () {
+        if (scrollTicking) {
+            return;
         }
-    };
+        scrollTicking = true;
+        requestAnimationFrame(function () {
+            const scrollThreshold = window.innerHeight;
+            const shown = document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold;
+            toplink.classList.toggle("hidden", !shown);
+            scrollTicking = false;
+        });
+    }, { passive: true });
 
 </script>
 <script>

@@ -157,11 +157,15 @@
 Feldsalat Zubereitung
 Teig zubereiten:
 Butter in der Mikrowelle zerlassen. Mehl mit der Milch verrühren, Eier und die flüssige Butter unterarbeiten. Mit Salz und Muskat würzen. Den Teig 15 Minuten quellen lassen. Porree-Füllung:
-...</p>
+Porree längs halbieren, waschen und in Streifen schneiden. Öl in einer Pfanne erhitzen, Porree ca. 3 Minuten andünsten. Mit Sahne aufgießen und einkochen lassen, bis die Flüssigkeit fast verkocht ist. Mit Salz, Pfeffer und Muskat abschmecken. Crêpes backen:
+In einer leicht eingefetteten Pfanne aus dem Teig nacheinander 8 Crêpes backen. Füllen und überbacken:
+Porree und 150 g Käse (gerieben) auf die Crêpes verteilen. Zusammenrollen und in eine Auflaufform legen. Mit den restlichen 150 g Käse bestreuen. Auf der 2. Einschubleiste von unten in den vorgeheizten Backofen schieben (200 °C). Backen:
+Etwa 10 Minuten überbacken, bis der Käse geschmolzen ist und leicht bräunt. Servieren:
+Mit Feldsalat oder einer anderen Beilage nach Wahl servieren. </p>
   </div>
   <footer class="entry-footer">
 
-<span title='2025-01-12 00:00:00 +0000 UTC'>January 12, 2025</span></footer>
+<span title='2025-01-12T00:00:00+00:00'>12. Januar 2025</span></footer>
   <a class="entry-link" aria-label="post link to Porree-Crêpes" href="https://Elektroenchen.github.io/kochbuch/rezepte/porree_crepes/"></a>
 </article>
 
@@ -178,7 +182,7 @@ Wirsing halbieren, den Strunk herausschneiden und den Kohl klein schneiden. Kart
   </div>
   <footer class="entry-footer">
 
-<span title='2025-01-12 00:00:00 +0000 UTC'>January 12, 2025</span></footer>
+<span title='2025-01-12T00:00:00+00:00'>12. Januar 2025</span></footer>
   <a class="entry-link" aria-label="post link to Wirsingeintopf mit Kartoffeln und Hackfleisch" href="https://Elektroenchen.github.io/kochbuch/rezepte/wirsingeintopf_kartoffeln_hackfleisch/"></a>
 </article>
 
@@ -196,7 +200,7 @@ Zwiebel abziehen, fein hacken. Paprika waschen, putzen, würfeln. Pflanzenöl in
   </div>
   <footer class="entry-footer">
 
-<span title='2025-01-11 00:00:00 +0000 UTC'>January 11, 2025</span></footer>
+<span title='2025-01-11T00:00:00+00:00'>11. Januar 2025</span></footer>
   <a class="entry-link" aria-label="post link to Fleisch-Käse-Strudel" href="https://Elektroenchen.github.io/kochbuch/rezepte/fleisch_kaese_strudel/"></a>
 </article>
 
@@ -213,7 +217,7 @@ Zwiebeln abziehen. Äpfel schälen, halbieren und in Scheiben schneiden. Ananass
   </div>
   <footer class="entry-footer">
 
-<span title='2025-01-11 00:00:00 +0000 UTC'>January 11, 2025</span></footer>
+<span title='2025-01-11T00:00:00+00:00'>11. Januar 2025</span></footer>
   <a class="entry-link" aria-label="post link to Hähnchenbrust auf Curryobst" href="https://Elektroenchen.github.io/kochbuch/rezepte/haenchenbrust_curryobst/"></a>
 </article>
 
@@ -229,7 +233,7 @@ Muschelnudeln nach Packungsanweisung in Salzwasser bissfest kochen. Käse fein r
   </div>
   <footer class="entry-footer">
 
-<span title='2025-01-11 00:00:00 +0000 UTC'>January 11, 2025</span></footer>
+<span title='2025-01-11T00:00:00+00:00'>11. Januar 2025</span></footer>
   <a class="entry-link" aria-label="post link to Pasta mit Pesto Verde" href="https://Elektroenchen.github.io/kochbuch/rezepte/pasta_pesto_verde/"></a>
 </article>
 
@@ -245,7 +249,7 @@ Hähnchenbrustfilet in dünne Streifen schneiden. In einer Schüssel mit 1 EL So
   </div>
   <footer class="entry-footer">
 
-<span title='2025-01-11 00:00:00 +0000 UTC'>January 11, 2025</span></footer>
+<span title='2025-01-11T00:00:00+00:00'>11. Januar 2025</span></footer>
   <a class="entry-link" aria-label="post link to Wokgericht mit Hähnchen und Gemüse" href="https://Elektroenchen.github.io/kochbuch/rezepte/wok_haehnchen_gemuese/"></a>
 </article>
 <footer class="page-footer">
@@ -285,22 +289,34 @@ Hähnchenbrustfilet in dünne Streifen schneiden. In einer Schüssel mit 1 EL So
             menu.scrollLeft = parseInt(scrollPosition, 10);
         }
         
-        menu.onscroll = function () {
-            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
-        }
+        
+        let menuScrollTimeout;
+        menu.addEventListener("scroll", function () {
+            clearTimeout(menuScrollTimeout);
+            menuScrollTimeout = setTimeout(function () {
+                localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+            }, 150);
+        }, { passive: true });
     }
 
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener("click", function (e) {
             e.preventDefault();
             var id = this.getAttribute("href").substr(1);
+            const target = document.querySelector(`[id='${decodeURIComponent(id)}']`);
             if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                target.scrollIntoView({
                     behavior: "smooth"
                 });
             } else {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+                target.scrollIntoView();
             }
+            
+            
+            if (target.tabIndex < 0 && !target.hasAttribute("tabindex")) {
+                target.setAttribute("tabindex", "-1");
+            }
+            target.focus({ preventScroll: true });
             if (id === "top") {
                 history.replaceState(null, null, " ");
             } else {
@@ -312,14 +328,20 @@ Hähnchenbrustfilet in dünne Streifen schneiden. In einer Schüssel mit 1 EL So
 </script>
 <script>
     var toplink = document.getElementById("top-link");
-    window.onscroll = function () {
-        const scrollThreshold = window.innerHeight;
-        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
-            toplink.classList.remove("hidden");
-        } else {
-            toplink.classList.add("hidden");
+    var scrollTicking = false;
+    
+    window.addEventListener("scroll", function () {
+        if (scrollTicking) {
+            return;
         }
-    };
+        scrollTicking = true;
+        requestAnimationFrame(function () {
+            const scrollThreshold = window.innerHeight;
+            const shown = document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold;
+            toplink.classList.toggle("hidden", !shown);
+            scrollTicking = false;
+        });
+    }, { passive: true });
 
 </script>
 <script>

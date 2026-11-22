@@ -140,11 +140,15 @@
   <div class="entry-content">
     <p>Zutaten für 2 Personen 500 g Gnocchi (aus dem Kühlregal) 2 EL Olivenöl 1 Schalotte 100 ml Weißwein (trocken) 100 ml Gemüsebrühe 125 g Frischkäse 1 TL Dijon-Senf 200 g Stremellachs 1 EL Zitronensaft 1 Prise Salz 1 Prise frisch gemahlener Pfeffer 3 EL frischer Dill, gehackt Zubereitung Schritt 1 Die Gnocchi in 1 EL Olivenöl goldbraun und leicht knusprig anbraten. Anschließend aus der Pfanne nehmen und beiseitestellen.
 Schritt 2 Die Schalotte fein würfeln und im restlichen Olivenöl glasig anschwitzen.
-...</p>
+Schritt 3 Mit Weißwein und Gemüsebrühe ablöschen. Frischkäse und Dijon-Senf einrühren und die Soße kurz köcheln lassen, bis sie leicht eindickt.
+Schritt 4 Den Stremellachs in grobe Stücke zupfen und vorsichtig unter die Soße heben.
+Schritt 5 Die Gnocchi zurück in die Pfanne geben und alles gut vermengen.
+Schritt 6 Mit Zitronensaft, Salz und frisch gemahlenem Pfeffer abschmecken. Mit dem frisch gehackten Dill bestreuen und sofort servieren.
+</p>
   </div>
   <footer class="entry-footer">
 
-<span title='2026-09-12 00:00:00 +0000 UTC'>September 12, 2026</span></footer>
+<span title='2026-09-12T00:00:00+00:00'>12. September 2026</span></footer>
   <a class="entry-link" aria-label="post link to Gnocchi mit Stremellachs und Dill" href="https://Elektroenchen.github.io/kochbuch/rezepte/gnocchi_stremellachs_dill/"></a>
 </article>
 
@@ -161,11 +165,23 @@ Schritt 2 Die Schalotte fein würfeln und im restlichen Olivenöl glasig anschwi
 Backofen auf 100 °C Ober-/Unterhitze vorheizen.
 Schritt 2 Petersilie abspülen und fein hacken.
 Die Hälfte der Zitronen auspressen und mit Petersilie, Sojasauce, Olivenöl, etwas Salz und frisch gemahlenem Pfeffer zu einer Vinaigrette verrühren.
-...</p>
+Schritt 3 Mandelstifte in einer Pfanne ohne Öl goldbraun anrösten und beiseitestellen.
+Einen Topf mit Wasser für die Zuckerschoten aufstellen.
+Schritt 4 Aufgetaute Lachsfilets in Mehl wenden und mit einem Schuss Olivenöl, Thymianzweigen und angedrückten Knoblauchzehen 3 Minuten scharf anbraten.
+Hitze etwas reduzieren, Filets wenden und weitere 3 Minuten braten.
+In eine ofenfeste Form legen und in den Backofen geben.
+Schritt 5 Zuckerschoten 2 Minuten in kochendem Wasser blanchieren.
+Anschließend in einer Pfanne mit Butter und braunem Zucker karamellisieren.
+Fertigen Reis mit der Zitronenvinaigrette marinieren.
+Schritt 6 Reis auf Tellern anrichten und mit den gerösteten Mandelstiften bestreuen.
+Zuckerschoten daneben anrichten.
+Lachs darauf geben.
+Mit Salz, frisch gemahlenem Pfeffer und dem Saft der restlichen Zitronen würzen.
+</p>
   </div>
   <footer class="entry-footer">
 
-<span title='2026-06-05 00:00:00 +0000 UTC'>June 5, 2026</span></footer>
+<span title='2026-06-05T00:00:00+00:00'>5. Juni 2026</span></footer>
   <a class="entry-link" aria-label="post link to Lachsfilet auf Zuckerschoten und schwarzem Reis" href="https://Elektroenchen.github.io/kochbuch/rezepte/lachsfilet_zuckerschoten_reis/"></a>
 </article>
     </main>
@@ -198,22 +214,34 @@ Die Hälfte der Zitronen auspressen und mit Petersilie, Sojasauce, Olivenöl, et
             menu.scrollLeft = parseInt(scrollPosition, 10);
         }
         
-        menu.onscroll = function () {
-            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
-        }
+        
+        let menuScrollTimeout;
+        menu.addEventListener("scroll", function () {
+            clearTimeout(menuScrollTimeout);
+            menuScrollTimeout = setTimeout(function () {
+                localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+            }, 150);
+        }, { passive: true });
     }
 
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener("click", function (e) {
             e.preventDefault();
             var id = this.getAttribute("href").substr(1);
+            const target = document.querySelector(`[id='${decodeURIComponent(id)}']`);
             if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                target.scrollIntoView({
                     behavior: "smooth"
                 });
             } else {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+                target.scrollIntoView();
             }
+            
+            
+            if (target.tabIndex < 0 && !target.hasAttribute("tabindex")) {
+                target.setAttribute("tabindex", "-1");
+            }
+            target.focus({ preventScroll: true });
             if (id === "top") {
                 history.replaceState(null, null, " ");
             } else {
@@ -225,14 +253,20 @@ Die Hälfte der Zitronen auspressen und mit Petersilie, Sojasauce, Olivenöl, et
 </script>
 <script>
     var toplink = document.getElementById("top-link");
-    window.onscroll = function () {
-        const scrollThreshold = window.innerHeight;
-        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
-            toplink.classList.remove("hidden");
-        } else {
-            toplink.classList.add("hidden");
+    var scrollTicking = false;
+    
+    window.addEventListener("scroll", function () {
+        if (scrollTicking) {
+            return;
         }
-    };
+        scrollTicking = true;
+        requestAnimationFrame(function () {
+            const scrollThreshold = window.innerHeight;
+            const shown = document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold;
+            toplink.classList.toggle("hidden", !shown);
+            scrollTicking = false;
+        });
+    }, { passive: true });
 
 </script>
 <script>

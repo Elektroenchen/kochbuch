@@ -145,11 +145,21 @@ Backofen auf 220 °C (Umluft 200 °C) vorheizen.
 Kartoffeln gründlich waschen, halbieren, auf ein Backblech legen.
 Mit Salz, Pfeffer und 4 EL Olivenöl würzen.
 20 Minuten auf mittlerer Schiene backen, zwischendurch wenden.
-...</p>
+Spargel vorbereiten
+Spargel waschen, holzige Enden entfernen, unteres Drittel schälen.
+Stangen in je 4 Stücke schneiden.
+Nach 20 Minuten Garzeit zu den Kartoffeln geben und weitere 10 Minuten backen, bis alles leicht gebräunt und gar ist.
+Vinaigrette zubereiten
+Schalotten fein würfeln. Kapern abtropfen lassen und hacken.
+Mit Kapernsud, Essig, Honig, Senf, 4 EL Olivenöl, Salz und Pfeffer zu einer Vinaigrette verrühren.
+Anrichten
+Gemüse aus dem Ofen nehmen, mit der Vinaigrette beträufeln.
+Kresse vom Beet schneiden und darüberstreuen.
+</p>
   </div>
   <footer class="entry-footer">
 
-<span title='2025-05-09 00:00:00 +0000 UTC'>May 9, 2025</span></footer>
+<span title='2025-05-09T00:00:00+00:00'>9. Mai 2025</span></footer>
   <a class="entry-link" aria-label="post link to Grüner Spargel mit Kartoffeln vom Blech" href="https://Elektroenchen.github.io/kochbuch/rezepte/spargel_kartoffeln_blech/"></a>
 </article>
     </main>
@@ -182,22 +192,34 @@ Mit Salz, Pfeffer und 4 EL Olivenöl würzen.
             menu.scrollLeft = parseInt(scrollPosition, 10);
         }
         
-        menu.onscroll = function () {
-            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
-        }
+        
+        let menuScrollTimeout;
+        menu.addEventListener("scroll", function () {
+            clearTimeout(menuScrollTimeout);
+            menuScrollTimeout = setTimeout(function () {
+                localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+            }, 150);
+        }, { passive: true });
     }
 
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener("click", function (e) {
             e.preventDefault();
             var id = this.getAttribute("href").substr(1);
+            const target = document.querySelector(`[id='${decodeURIComponent(id)}']`);
             if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                target.scrollIntoView({
                     behavior: "smooth"
                 });
             } else {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+                target.scrollIntoView();
             }
+            
+            
+            if (target.tabIndex < 0 && !target.hasAttribute("tabindex")) {
+                target.setAttribute("tabindex", "-1");
+            }
+            target.focus({ preventScroll: true });
             if (id === "top") {
                 history.replaceState(null, null, " ");
             } else {
@@ -209,14 +231,20 @@ Mit Salz, Pfeffer und 4 EL Olivenöl würzen.
 </script>
 <script>
     var toplink = document.getElementById("top-link");
-    window.onscroll = function () {
-        const scrollThreshold = window.innerHeight;
-        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
-            toplink.classList.remove("hidden");
-        } else {
-            toplink.classList.add("hidden");
+    var scrollTicking = false;
+    
+    window.addEventListener("scroll", function () {
+        if (scrollTicking) {
+            return;
         }
-    };
+        scrollTicking = true;
+        requestAnimationFrame(function () {
+            const scrollThreshold = window.innerHeight;
+            const shown = document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold;
+            toplink.classList.toggle("hidden", !shown);
+            scrollTicking = false;
+        });
+    }, { passive: true });
 
 </script>
 <script>

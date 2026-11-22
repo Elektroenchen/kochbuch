@@ -145,11 +145,14 @@ Für die Panna Cotta:
 Vorbereitung:
 Die Vanilleschote längs aufschneiden und das Mark herauskratzen. Die Gelatineblätter in einer Schale mit sehr kaltem Wasser für mindestens 5 Minuten einweichen. Sahne-Mischung zubereiten:
 In einem kleinen Topf die Sahne mit 50 g Zucker, dem Vanillemark, der ausgekratzten Vanilleschote und dem Zitronensaft vermengen. Die Mischung unter gelegentlichem Rühren langsam erhitzen und für etwa 15 Minuten sanft köcheln lassen, damit sich die Aromen entfalten können. Gelatine einarbeiten:
-...</p>
+Den Topf vom Herd nehmen und die Vanilleschote entfernen. Die eingeweichten Gelatineblätter gut ausdrücken und in die heiße, aber nicht mehr kochende Sahne einrühren, bis sie sich vollständig aufgelöst haben. Portionieren und kühlen:
+Die Sahne-Gelatine-Mischung gleichmäßig auf vier Förmchen oder Gläser (je ca. 125 ml Fassungsvermögen) verteilen. Die Panna Cotta für mindestens 4 Stunden, besser über Nacht, im Kühlschrank fest werden lassen. Beeren-Topping zubereiten:
+Die Beeren mit 100 ml Wasser und 60 g Zucker in einen Topf geben. Die Mischung aufkochen und bei mittlerer Hitze etwa 5–10 Minuten köcheln lassen, bis die Beeren weich sind und die Sauce leicht eingedickt ist. Anschließend abkühlen lassen. Servieren:
+Vor dem Servieren das Beeren-Topping gleichmäßig auf die gekühlte Panna Cotta verteilen. Optional mit frischen Beeren oder Minzblättern garnieren. </p>
   </div>
   <footer class="entry-footer">
 
-<span title='2025-03-29 00:00:00 +0000 UTC'>March 29, 2025</span></footer>
+<span title='2025-03-29T00:00:00+00:00'>29. März 2025</span></footer>
   <a class="entry-link" aria-label="post link to Panna Cotta" href="https://Elektroenchen.github.io/kochbuch/rezepte/panna_cotta/"></a>
 </article>
 
@@ -166,7 +169,7 @@ Zwiebeln abziehen und fein hacken. Apfel schälen und würfeln. Schinken und har
   </div>
   <footer class="entry-footer">
 
-<span title='2025-02-14 00:00:00 +0000 UTC'>February 14, 2025</span></footer>
+<span title='2025-02-14T00:00:00+00:00'>14. Februar 2025</span></footer>
   <a class="entry-link" aria-label="post link to Überbackener Schinkentoast" href="https://Elektroenchen.github.io/kochbuch/rezepte/%C3%BCberbackener_schinkentoast/"></a>
 </article>
     </main>
@@ -199,22 +202,34 @@ Zwiebeln abziehen und fein hacken. Apfel schälen und würfeln. Schinken und har
             menu.scrollLeft = parseInt(scrollPosition, 10);
         }
         
-        menu.onscroll = function () {
-            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
-        }
+        
+        let menuScrollTimeout;
+        menu.addEventListener("scroll", function () {
+            clearTimeout(menuScrollTimeout);
+            menuScrollTimeout = setTimeout(function () {
+                localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+            }, 150);
+        }, { passive: true });
     }
 
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener("click", function (e) {
             e.preventDefault();
             var id = this.getAttribute("href").substr(1);
+            const target = document.querySelector(`[id='${decodeURIComponent(id)}']`);
             if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                target.scrollIntoView({
                     behavior: "smooth"
                 });
             } else {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+                target.scrollIntoView();
             }
+            
+            
+            if (target.tabIndex < 0 && !target.hasAttribute("tabindex")) {
+                target.setAttribute("tabindex", "-1");
+            }
+            target.focus({ preventScroll: true });
             if (id === "top") {
                 history.replaceState(null, null, " ");
             } else {
@@ -226,14 +241,20 @@ Zwiebeln abziehen und fein hacken. Apfel schälen und würfeln. Schinken und har
 </script>
 <script>
     var toplink = document.getElementById("top-link");
-    window.onscroll = function () {
-        const scrollThreshold = window.innerHeight;
-        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
-            toplink.classList.remove("hidden");
-        } else {
-            toplink.classList.add("hidden");
+    var scrollTicking = false;
+    
+    window.addEventListener("scroll", function () {
+        if (scrollTicking) {
+            return;
         }
-    };
+        scrollTicking = true;
+        requestAnimationFrame(function () {
+            const scrollThreshold = window.innerHeight;
+            const shown = document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold;
+            toplink.classList.toggle("hidden", !shown);
+            scrollTicking = false;
+        });
+    }, { passive: true });
 
 </script>
 <script>

@@ -31,7 +31,13 @@ Schritt 2
 Zucchini und Paprika putzen und fein schneiden oder reiben.
 Zwiebeln schälen und fein hacken.
 Schritt 3
-Alle Zutaten in einer großen Schüssel vermischen.">
+Alle Zutaten in einer großen Schüssel vermischen.
+Schritt 4
+Die Masse gleichmäßig auf dem beschichteten Backblech verteilen und ca. 20–25 Minuten backen.
+Schritt 5
+Kurz abkühlen lassen und servieren.
+
+">
 <meta name="author" content="">
 <link rel="canonical" href="https://Elektroenchen.github.io/kochbuch/rezepte/gem%C3%BCse-quiche_vom_blech/">
 <link crossorigin="anonymous" href="/kochbuch/assets/css/stylesheet.css" rel="preload stylesheet" as="style">
@@ -94,7 +100,9 @@ Alle Zutaten in einer großen Schüssel vermischen.">
   <meta property="og:description" content="Zutaten für 8 Portionen 1 große Zucchini (ca. 300 g) 1 rote Paprika 2 rote Zwiebeln 200 g geriebener Käse 4 Eier 300 ml Milch 350 g Weizenmehl 3 TL Backpulver 3 TL italienische Kräuter 3 TL Salz Zubereitung Schritt 1 Backofen auf 190 °C Umluft vorheizen.
 Schritt 2 Zucchini und Paprika putzen und fein schneiden oder reiben.
 Zwiebeln schälen und fein hacken.
-Schritt 3 Alle Zutaten in einer großen Schüssel vermischen.">
+Schritt 3 Alle Zutaten in einer großen Schüssel vermischen.
+Schritt 4 Die Masse gleichmäßig auf dem beschichteten Backblech verteilen und ca. 20–25 Minuten backen.
+Schritt 5 Kurz abkühlen lassen und servieren.">
   <meta property="og:locale" content="de_de">
   <meta property="og:type" content="article">
     <meta property="article:section" content="rezepte">
@@ -111,7 +119,9 @@ Schritt 3 Alle Zutaten in einer großen Schüssel vermischen.">
   <meta name="twitter:description" content="Zutaten für 8 Portionen 1 große Zucchini (ca. 300 g) 1 rote Paprika 2 rote Zwiebeln 200 g geriebener Käse 4 Eier 300 ml Milch 350 g Weizenmehl 3 TL Backpulver 3 TL italienische Kräuter 3 TL Salz Zubereitung Schritt 1 Backofen auf 190 °C Umluft vorheizen.
 Schritt 2 Zucchini und Paprika putzen und fein schneiden oder reiben.
 Zwiebeln schälen und fein hacken.
-Schritt 3 Alle Zutaten in einer großen Schüssel vermischen.">
+Schritt 3 Alle Zutaten in einer großen Schüssel vermischen.
+Schritt 4 Die Masse gleichmäßig auf dem beschichteten Backblech verteilen und ca. 20–25 Minuten backen.
+Schritt 5 Kurz abkühlen lassen und servieren.">
 
 
 <script type="application/ld+json">
@@ -140,7 +150,7 @@ Schritt 3 Alle Zutaten in einer großen Schüssel vermischen.">
   "@type": "BlogPosting",
   "headline": "Gemüse-Quiche vom Blech",
   "name": "Gemüse-Quiche vom Blech",
-  "description": "\rZutaten für 8 Portionen 1 große Zucchini (ca. 300 g) 1 rote Paprika 2 rote Zwiebeln 200 g geriebener Käse 4 Eier 300 ml Milch 350 g Weizenmehl 3 TL Backpulver 3 TL italienische Kräuter 3 TL Salz Zubereitung Schritt 1 Backofen auf 190 °C Umluft vorheizen.\nSchritt 2 Zucchini und Paprika putzen und fein schneiden oder reiben.\nZwiebeln schälen und fein hacken.\nSchritt 3 Alle Zutaten in einer großen Schüssel vermischen.\n",
+  "description": "\rZutaten für 8 Portionen 1 große Zucchini (ca. 300 g) 1 rote Paprika 2 rote Zwiebeln 200 g geriebener Käse 4 Eier 300 ml Milch 350 g Weizenmehl 3 TL Backpulver 3 TL italienische Kräuter 3 TL Salz Zubereitung Schritt 1 Backofen auf 190 °C Umluft vorheizen.\nSchritt 2 Zucchini und Paprika putzen und fein schneiden oder reiben.\nZwiebeln schälen und fein hacken.\nSchritt 3 Alle Zutaten in einer großen Schüssel vermischen.\nSchritt 4 Die Masse gleichmäßig auf dem beschichteten Backblech verteilen und ca. 20–25 Minuten backen.\nSchritt 5 Kurz abkühlen lassen und servieren.\n",
   "keywords": [
     "Quiche", "Gemüse", "vegetarisch", "Ofengericht"
   ],
@@ -221,7 +231,7 @@ Schritt 3 Alle Zutaten in einer großen Schüssel vermischen.">
     </h1>
     <div class="post-meta">
 
-<span title='2026-05-11 00:00:00 +0000 UTC'>May 11, 2026</span>
+<span title='2026-05-11T00:00:00+00:00'>11. Mai 2026</span>
 
 </div>
   </header> 
@@ -302,22 +312,34 @@ Zwiebeln schälen und fein hacken.</p>
             menu.scrollLeft = parseInt(scrollPosition, 10);
         }
         
-        menu.onscroll = function () {
-            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
-        }
+        
+        let menuScrollTimeout;
+        menu.addEventListener("scroll", function () {
+            clearTimeout(menuScrollTimeout);
+            menuScrollTimeout = setTimeout(function () {
+                localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+            }, 150);
+        }, { passive: true });
     }
 
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener("click", function (e) {
             e.preventDefault();
             var id = this.getAttribute("href").substr(1);
+            const target = document.querySelector(`[id='${decodeURIComponent(id)}']`);
             if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                target.scrollIntoView({
                     behavior: "smooth"
                 });
             } else {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+                target.scrollIntoView();
             }
+            
+            
+            if (target.tabIndex < 0 && !target.hasAttribute("tabindex")) {
+                target.setAttribute("tabindex", "-1");
+            }
+            target.focus({ preventScroll: true });
             if (id === "top") {
                 history.replaceState(null, null, " ");
             } else {
@@ -329,14 +351,20 @@ Zwiebeln schälen und fein hacken.</p>
 </script>
 <script>
     var toplink = document.getElementById("top-link");
-    window.onscroll = function () {
-        const scrollThreshold = window.innerHeight;
-        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
-            toplink.classList.remove("hidden");
-        } else {
-            toplink.classList.add("hidden");
+    var scrollTicking = false;
+    
+    window.addEventListener("scroll", function () {
+        if (scrollTicking) {
+            return;
         }
-    };
+        scrollTicking = true;
+        requestAnimationFrame(function () {
+            const scrollThreshold = window.innerHeight;
+            const shown = document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold;
+            toplink.classList.toggle("hidden", !shown);
+            scrollTicking = false;
+        });
+    }, { passive: true });
 
 </script>
 <script>

@@ -142,11 +142,15 @@
 1,5 kg Karotten, in dünne Scheiben geschnitten 1 Zwiebel, gewürfelt 1 Knoblauchzehe, fein gehackt 20 g Ingwer, fein gehackt (Menge nach Geschmack) 2 EL neutrales Pflanzenöl 1 TL Zucker Salz, Pfeffer, Chilipulver (Menge nach Geschmack) 500 ml Gemüsebrühe 3 EL Orangensaft (frisch gepresst oder Direktsaft) 400 ml Kokosmilch 1 TL Currypulver 1 Handvoll Kürbiskerne, geröstet, zum Bestreuen Zubereitung
 Kürbiskerne rösten
 Die Kürbiskerne in einer Pfanne ohne Fett bei mittlerer Hitze rösten, bis sie leicht zu knistern beginnen. Beiseitestellen. Gemüse vorbereiten
-...</p>
+Karotten waschen, schälen und in dünne Scheiben schneiden. Zwiebel, Knoblauch und Ingwer schälen und fein hacken. Anbraten
+Öl in einem großen Topf erhitzen. Zwiebeln, Knoblauch und Ingwer darin anschwitzen. Die Karottenscheiben zugeben und mit Zucker bestreuen. Alles leicht karamellisieren lassen. Mit Salz, Pfeffer, Currypulver und einer Prise Chili würzen. Kochen
+Mit Gemüsebrühe ablöschen, aufkochen lassen. Zugedeckt bei mittlerer Hitze ca. 20 Minuten köcheln lassen. Verfeinern und pürieren
+Orangensaft und Kokosmilch zugeben (etwas Kokosmilch zum Garnieren beiseitestellen). Die Suppe mit einem Stabmixer pürieren. Anrichten
+Suppe abschmecken. Mit gerösteten Kürbiskernen und einem Klecks Kokosmilch servieren. </p>
   </div>
   <footer class="entry-footer">
 
-<span title='2025-05-03 00:00:00 +0000 UTC'>May 3, 2025</span></footer>
+<span title='2025-05-03T00:00:00+00:00'>3. Mai 2025</span></footer>
   <a class="entry-link" aria-label="post link to Karottensuppe mit Ingwer und Kokosmilch" href="https://Elektroenchen.github.io/kochbuch/rezepte/karottensuppe_kokos/"></a>
 </article>
 
@@ -164,11 +168,14 @@ Die Kürbiskerne in einer Pfanne ohne Fett bei mittlerer Hitze rösten, bis sie 
 Vorbereitung
 Zwiebeln und ggf. Knoblauch schälen und fein würfeln. Anbraten
 Öl in einem großen Topf erhitzen. Zwiebeln und ggf. Knoblauch glasig dünsten. Linsen und Flüssigkeit zugeben
-...</p>
+Rote Linsen hinzufügen und kurz mitdünsten. Tomaten samt Saft, Kokosmilch und Gemüsebrühe zugeben. Alles gut verrühren. Kochen
+Suppe aufkochen und bei mittlerer Hitze ca. 20 Minuten köcheln lassen, bis die Linsen weich sind. Zwischendurch umrühren und Tomatenstücke mit dem Kochlöffel zerdrücken. Abschmecken
+Mit Chilipulver, Kurkuma, Salz und Pfeffer würzen. Wer mag, ergänzt etwas Korianderpulver. Tipp:
+Die Suppe schmeckt aufgewärmt sogar noch besser. Optional mit frischem Koriander und etwas Baguette servieren. </p>
   </div>
   <footer class="entry-footer">
 
-<span title='2025-04-09 00:00:00 +0000 UTC'>April 9, 2025</span></footer>
+<span title='2025-04-09T00:00:00+00:00'>9. April 2025</span></footer>
   <a class="entry-link" aria-label="post link to Rote Linsen-Kokos-Suppe" href="https://Elektroenchen.github.io/kochbuch/rezepte/rote_linsen-kokos-suppe/"></a>
 </article>
 
@@ -185,11 +192,13 @@ Zwiebeln und ggf. Knoblauch schälen und fein würfeln. Anbraten
 400 g Rinderhackfleisch 400 g Tomaten (passiert oder gehackt) 400 g Kidneybohnen 200 g Mais 500 ml Rinderbrühe (oder Gemüsebrühe) je 1 rote und 1 gelbe Paprika 1 Zwiebel 2 Knoblauchzehen (nach Geschmack) 1 Lorbeerblatt 1 Zimtstange 1 EL Tomatenmark 2 Stück Zartbitterschokolade (60 % Kakaoanteil) Salz, Pfeffer Paprikapulver, Oregano, Kreuzkümmel ½ TL Chilipulver Zubereitung
 Schritt 1:
 Knoblauch und Zwiebel schälen. Paprika waschen und in kleine Würfel schneiden. Öl in einer Pfanne erhitzen, Knoblauch pressen und in die Pfanne geben. Zwiebeln und ggf. Knoblauch hinzufügen und kurz andünsten. Schritt 2:
-...</p>
+Hackfleisch dazugeben und krümelig anbraten. Schritt 3:
+Nach und nach 1 TL Salz, Paprikapulver, Oregano und Kreuzkümmel hinzufügen. Zimtstange, Lorbeerblatt, Tomatenmark, Zartbitterschokolade und die Paprikawürfel unterrühren. Schritt 4:
+Passierte Tomaten und Rinderbrühe angießen. Kidneybohnen und Mais hinzufügen. Chili con Carne ca. 10 Minuten köcheln lassen. </p>
   </div>
   <footer class="entry-footer">
 
-<span title='2025-02-14 00:00:00 +0000 UTC'>February 14, 2025</span></footer>
+<span title='2025-02-14T00:00:00+00:00'>14. Februar 2025</span></footer>
   <a class="entry-link" aria-label="post link to Chili con Carne" href="https://Elektroenchen.github.io/kochbuch/rezepte/chili_con_carne/"></a>
 </article>
     </main>
@@ -222,22 +231,34 @@ Knoblauch und Zwiebel schälen. Paprika waschen und in kleine Würfel schneiden.
             menu.scrollLeft = parseInt(scrollPosition, 10);
         }
         
-        menu.onscroll = function () {
-            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
-        }
+        
+        let menuScrollTimeout;
+        menu.addEventListener("scroll", function () {
+            clearTimeout(menuScrollTimeout);
+            menuScrollTimeout = setTimeout(function () {
+                localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+            }, 150);
+        }, { passive: true });
     }
 
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener("click", function (e) {
             e.preventDefault();
             var id = this.getAttribute("href").substr(1);
+            const target = document.querySelector(`[id='${decodeURIComponent(id)}']`);
             if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                target.scrollIntoView({
                     behavior: "smooth"
                 });
             } else {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+                target.scrollIntoView();
             }
+            
+            
+            if (target.tabIndex < 0 && !target.hasAttribute("tabindex")) {
+                target.setAttribute("tabindex", "-1");
+            }
+            target.focus({ preventScroll: true });
             if (id === "top") {
                 history.replaceState(null, null, " ");
             } else {
@@ -249,14 +270,20 @@ Knoblauch und Zwiebel schälen. Paprika waschen und in kleine Würfel schneiden.
 </script>
 <script>
     var toplink = document.getElementById("top-link");
-    window.onscroll = function () {
-        const scrollThreshold = window.innerHeight;
-        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
-            toplink.classList.remove("hidden");
-        } else {
-            toplink.classList.add("hidden");
+    var scrollTicking = false;
+    
+    window.addEventListener("scroll", function () {
+        if (scrollTicking) {
+            return;
         }
-    };
+        scrollTicking = true;
+        requestAnimationFrame(function () {
+            const scrollThreshold = window.innerHeight;
+            const shown = document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold;
+            toplink.classList.toggle("hidden", !shown);
+            scrollTicking = false;
+        });
+    }, { passive: true });
 
 </script>
 <script>

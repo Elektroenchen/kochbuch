@@ -143,11 +143,14 @@
 Speck anbraten
 Die Speckwürfel in einer großen Pfanne bei mittlerer Hitze knusprig braten. Anschließend herausnehmen und auf Küchenpapier abtropfen lassen. Zwiebeln karamellisieren
 In derselben Pfanne die Butter erhitzen. Die Zwiebelringe bei mittlerer Hitze goldbraun und leicht karamellisiert anbraten. Gelegentlich umrühren, damit sie gleichmäßig bräunen. Spätzle hinzufügen
-...</p>
+Die fertigen Spätzle zu den Zwiebeln in die Pfanne geben und alles gut vermengen. Kurz anbraten, damit die Spätzle leicht Farbe annehmen. Käse und Sahne einrühren
+Den geriebenen Käse und die Sahne hinzufügen. Unter ständigem Rühren erhitzen, bis der Käse vollständig geschmolzen ist und die Spätzle eine cremige Konsistenz haben. Mit Salz, Pfeffer und einer Prise Muskatnuss abschmecken. Speck zurückgeben
+Den gebratenen Speck wieder in die Pfanne geben und unter die Käsespätzle mischen. Servieren
+Die Käsespätzle auf Tellern anrichten und mit frisch gehackter Petersilie oder Schnittlauch bestreuen. Sofort servieren. </p>
   </div>
   <footer class="entry-footer">
 
-<span title='2025-01-31 00:00:00 +0000 UTC'>January 31, 2025</span></footer>
+<span title='2025-01-31T00:00:00+00:00'>31. Januar 2025</span></footer>
   <a class="entry-link" aria-label="post link to Käsespätzle mit Speck und Sahne" href="https://Elektroenchen.github.io/kochbuch/rezepte/kaesespaetzle/"></a>
 </article>
 
@@ -164,11 +167,15 @@ In derselben Pfanne die Butter erhitzen. Die Zwiebelringe bei mittlerer Hitze go
 Feldsalat Zubereitung
 Teig zubereiten:
 Butter in der Mikrowelle zerlassen. Mehl mit der Milch verrühren, Eier und die flüssige Butter unterarbeiten. Mit Salz und Muskat würzen. Den Teig 15 Minuten quellen lassen. Porree-Füllung:
-...</p>
+Porree längs halbieren, waschen und in Streifen schneiden. Öl in einer Pfanne erhitzen, Porree ca. 3 Minuten andünsten. Mit Sahne aufgießen und einkochen lassen, bis die Flüssigkeit fast verkocht ist. Mit Salz, Pfeffer und Muskat abschmecken. Crêpes backen:
+In einer leicht eingefetteten Pfanne aus dem Teig nacheinander 8 Crêpes backen. Füllen und überbacken:
+Porree und 150 g Käse (gerieben) auf die Crêpes verteilen. Zusammenrollen und in eine Auflaufform legen. Mit den restlichen 150 g Käse bestreuen. Auf der 2. Einschubleiste von unten in den vorgeheizten Backofen schieben (200 °C). Backen:
+Etwa 10 Minuten überbacken, bis der Käse geschmolzen ist und leicht bräunt. Servieren:
+Mit Feldsalat oder einer anderen Beilage nach Wahl servieren. </p>
   </div>
   <footer class="entry-footer">
 
-<span title='2025-01-12 00:00:00 +0000 UTC'>January 12, 2025</span></footer>
+<span title='2025-01-12T00:00:00+00:00'>12. Januar 2025</span></footer>
   <a class="entry-link" aria-label="post link to Porree-Crêpes" href="https://Elektroenchen.github.io/kochbuch/rezepte/porree_crepes/"></a>
 </article>
 <footer class="page-footer">
@@ -208,22 +215,34 @@ Butter in der Mikrowelle zerlassen. Mehl mit der Milch verrühren, Eier und die 
             menu.scrollLeft = parseInt(scrollPosition, 10);
         }
         
-        menu.onscroll = function () {
-            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
-        }
+        
+        let menuScrollTimeout;
+        menu.addEventListener("scroll", function () {
+            clearTimeout(menuScrollTimeout);
+            menuScrollTimeout = setTimeout(function () {
+                localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+            }, 150);
+        }, { passive: true });
     }
 
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener("click", function (e) {
             e.preventDefault();
             var id = this.getAttribute("href").substr(1);
+            const target = document.querySelector(`[id='${decodeURIComponent(id)}']`);
             if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                target.scrollIntoView({
                     behavior: "smooth"
                 });
             } else {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+                target.scrollIntoView();
             }
+            
+            
+            if (target.tabIndex < 0 && !target.hasAttribute("tabindex")) {
+                target.setAttribute("tabindex", "-1");
+            }
+            target.focus({ preventScroll: true });
             if (id === "top") {
                 history.replaceState(null, null, " ");
             } else {
@@ -235,14 +254,20 @@ Butter in der Mikrowelle zerlassen. Mehl mit der Milch verrühren, Eier und die 
 </script>
 <script>
     var toplink = document.getElementById("top-link");
-    window.onscroll = function () {
-        const scrollThreshold = window.innerHeight;
-        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
-            toplink.classList.remove("hidden");
-        } else {
-            toplink.classList.add("hidden");
+    var scrollTicking = false;
+    
+    window.addEventListener("scroll", function () {
+        if (scrollTicking) {
+            return;
         }
-    };
+        scrollTicking = true;
+        requestAnimationFrame(function () {
+            const scrollThreshold = window.innerHeight;
+            const shown = document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold;
+            toplink.classList.toggle("hidden", !shown);
+            scrollTicking = false;
+        });
+    }, { passive: true });
 
 </script>
 <script>

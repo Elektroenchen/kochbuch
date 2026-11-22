@@ -143,11 +143,11 @@
 Vorbereitung
 Brokkoli in Röschen teilen. Bohnen und Cocktailtomaten halbieren. Zwiebel und Knoblauch fein würfeln. Kochen
 Die Tortellini in gesalzenem, kochendem Wasser nach Packungsangabe garen und mit einem Schöpflöffel herausnehmen. Die Bohnen in dasselbe Wasser geben und 8 Minuten kochen. Nach 4 Minuten die Brokkoliröschen dazugeben. Nach insgesamt 8 Minuten Gemüse abgießen und kalt abschrecken. Pfanne
-...</p>
+In einer großen Pfanne das Olivenöl erhitzen. Zwiebel und Knoblauch darin andünsten. Sahne und Gemüsebrühe einrühren, aufkochen lassen und mit Salz, Pfeffer und Chili würzen. Tortellini, Bohnen, Brokkoli und Tomaten unterheben und heiß servieren. </p>
   </div>
   <footer class="entry-footer">
 
-<span title='2025-06-11 00:00:00 +0000 UTC'>June 11, 2025</span></footer>
+<span title='2025-06-11T00:00:00+00:00'>11. Juni 2025</span></footer>
   <a class="entry-link" aria-label="post link to Vegetarische Tortellini-Pfanne mit Brokkoli und Bohnen" href="https://Elektroenchen.github.io/kochbuch/rezepte/tortellini_pfanne/"></a>
 </article>
     </main>
@@ -180,22 +180,34 @@ Die Tortellini in gesalzenem, kochendem Wasser nach Packungsangabe garen und mit
             menu.scrollLeft = parseInt(scrollPosition, 10);
         }
         
-        menu.onscroll = function () {
-            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
-        }
+        
+        let menuScrollTimeout;
+        menu.addEventListener("scroll", function () {
+            clearTimeout(menuScrollTimeout);
+            menuScrollTimeout = setTimeout(function () {
+                localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+            }, 150);
+        }, { passive: true });
     }
 
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener("click", function (e) {
             e.preventDefault();
             var id = this.getAttribute("href").substr(1);
+            const target = document.querySelector(`[id='${decodeURIComponent(id)}']`);
             if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                target.scrollIntoView({
                     behavior: "smooth"
                 });
             } else {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+                target.scrollIntoView();
             }
+            
+            
+            if (target.tabIndex < 0 && !target.hasAttribute("tabindex")) {
+                target.setAttribute("tabindex", "-1");
+            }
+            target.focus({ preventScroll: true });
             if (id === "top") {
                 history.replaceState(null, null, " ");
             } else {
@@ -207,14 +219,20 @@ Die Tortellini in gesalzenem, kochendem Wasser nach Packungsangabe garen und mit
 </script>
 <script>
     var toplink = document.getElementById("top-link");
-    window.onscroll = function () {
-        const scrollThreshold = window.innerHeight;
-        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
-            toplink.classList.remove("hidden");
-        } else {
-            toplink.classList.add("hidden");
+    var scrollTicking = false;
+    
+    window.addEventListener("scroll", function () {
+        if (scrollTicking) {
+            return;
         }
-    };
+        scrollTicking = true;
+        requestAnimationFrame(function () {
+            const scrollThreshold = window.innerHeight;
+            const shown = document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold;
+            toplink.classList.toggle("hidden", !shown);
+            scrollTicking = false;
+        });
+    }, { passive: true });
 
 </script>
 <script>

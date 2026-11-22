@@ -143,11 +143,13 @@
 Dressing zubereiten
 Saure Sahne, Joghurt, Zitronensaft und Öl in einer Schüssel verrühren. Knoblauch dazupressen, mit Salz, Pfeffer und Zucker abschmecken. Käse schneiden
 Käse längs halbieren und in feine Streifen (0,5 × 4 cm) schneiden. In einer Schüssel mit dem Dressing vermengen. Gemüse vorbereiten
-...</p>
+Radieschen waschen, putzen und in dünne Scheiben schneiden. Eisbergsalat waschen, in feine Streifen schneiden. Cornichons in dünne Scheiben schneiden. Vermengen und ziehen lassen
+Alles zum Käse geben und gut vermengen. Mindestens 15 Minuten bei Zimmertemperatur ziehen lassen Tipp:
+Wenn man Salat und Radieschen erst kurz vor dem Servieren zugibt, kann man den Rest des Salats bereits am Vorabend vorbereiten. Vor dem Servieren nach Belieben mit 1 EL Schnittlauchröllchen bestreuen. </p>
   </div>
   <footer class="entry-footer">
 
-<span title='2025-02-15 00:00:00 +0000 UTC'>February 15, 2025</span></footer>
+<span title='2025-02-15T00:00:00+00:00'>15. Februar 2025</span></footer>
   <a class="entry-link" aria-label="post link to Allgäuer Käsesalat" href="https://Elektroenchen.github.io/kochbuch/rezepte/allg%C3%A4uer_k%C3%A4sesalat/"></a>
 </article>
 
@@ -163,11 +165,15 @@ Für die Puffer:
 100 g griechischer Joghurt (10 % Fett) 1 EL TK-Schnittlauch Salz, Pfeffer Zubereitung
 Lauch vorbereiten
 Lauch putzen, Stangen längs halbieren und in schmale Streifen schneiden. Gründlich waschen, dann in einem Topf mit kochendem Salzwasser 2 Min. blanchieren. Anschließend in einem Sieb abgießen, kalt abschrecken und gut abtropfen lassen. Teig zubereiten
-...</p>
+Gouda grob reiben. Eier in einer Schüssel mit Frischkäse verquirlen. Haferflocken, Vollkornmehl, Gouda und Lauch dazugeben, gut vermengen. Mit Salz und Muskatnuss würzen. Puffer braten
+Rapsöl in einer beschichteten Pfanne (28 cm Ø) bei mittlerer Hitze erhitzen. 2 EL Teig in die Pfanne setzen und mit einem Löffel flach drücken. Insgesamt 6–8 kleine Puffer formen und pro Seite ca. 4 Min. goldbraun braten. Schnittlauch-Dip zubereiten
+Joghurt mit Schnittlauch verrühren, mit Salz und Pfeffer abschmecken. Servieren
+Die fertigen Puffer aus der Pfanne nehmen und auf Küchenpapier abtropfen lassen. Puffer auf Tellern anrichten und mit dem Schnittlauch-Dip servieren. To-Go-Tipp:
+Die Puffer und der Dip eignen sich perfekt zum Mitnehmen. Bereite direkt die doppelte Menge zu, so kannst du eine Portion am Abend genießen und die zweite am nächsten Tag in der Mittagspause essen. </p>
   </div>
   <footer class="entry-footer">
 
-<span title='2025-02-15 00:00:00 +0000 UTC'>February 15, 2025</span></footer>
+<span title='2025-02-15T00:00:00+00:00'>15. Februar 2025</span></footer>
   <a class="entry-link" aria-label="post link to Käse-Lauch-Puffer mit Schnittlauch-Dip" href="https://Elektroenchen.github.io/kochbuch/rezepte/k%C3%A4se-lauch-puffer_mit_schnittlauch-dip/"></a>
 </article>
 
@@ -185,11 +191,14 @@ Lauch putzen, Stangen längs halbieren und in schmale Streifen schneiden. Gründ
 Speck anbraten
 Die Speckwürfel in einer großen Pfanne bei mittlerer Hitze knusprig braten. Anschließend herausnehmen und auf Küchenpapier abtropfen lassen. Zwiebeln karamellisieren
 In derselben Pfanne die Butter erhitzen. Die Zwiebelringe bei mittlerer Hitze goldbraun und leicht karamellisiert anbraten. Gelegentlich umrühren, damit sie gleichmäßig bräunen. Spätzle hinzufügen
-...</p>
+Die fertigen Spätzle zu den Zwiebeln in die Pfanne geben und alles gut vermengen. Kurz anbraten, damit die Spätzle leicht Farbe annehmen. Käse und Sahne einrühren
+Den geriebenen Käse und die Sahne hinzufügen. Unter ständigem Rühren erhitzen, bis der Käse vollständig geschmolzen ist und die Spätzle eine cremige Konsistenz haben. Mit Salz, Pfeffer und einer Prise Muskatnuss abschmecken. Speck zurückgeben
+Den gebratenen Speck wieder in die Pfanne geben und unter die Käsespätzle mischen. Servieren
+Die Käsespätzle auf Tellern anrichten und mit frisch gehackter Petersilie oder Schnittlauch bestreuen. Sofort servieren. </p>
   </div>
   <footer class="entry-footer">
 
-<span title='2025-01-31 00:00:00 +0000 UTC'>January 31, 2025</span></footer>
+<span title='2025-01-31T00:00:00+00:00'>31. Januar 2025</span></footer>
   <a class="entry-link" aria-label="post link to Käsespätzle mit Speck und Sahne" href="https://Elektroenchen.github.io/kochbuch/rezepte/kaesespaetzle/"></a>
 </article>
     </main>
@@ -222,22 +231,34 @@ In derselben Pfanne die Butter erhitzen. Die Zwiebelringe bei mittlerer Hitze go
             menu.scrollLeft = parseInt(scrollPosition, 10);
         }
         
-        menu.onscroll = function () {
-            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
-        }
+        
+        let menuScrollTimeout;
+        menu.addEventListener("scroll", function () {
+            clearTimeout(menuScrollTimeout);
+            menuScrollTimeout = setTimeout(function () {
+                localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+            }, 150);
+        }, { passive: true });
     }
 
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener("click", function (e) {
             e.preventDefault();
             var id = this.getAttribute("href").substr(1);
+            const target = document.querySelector(`[id='${decodeURIComponent(id)}']`);
             if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                target.scrollIntoView({
                     behavior: "smooth"
                 });
             } else {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+                target.scrollIntoView();
             }
+            
+            
+            if (target.tabIndex < 0 && !target.hasAttribute("tabindex")) {
+                target.setAttribute("tabindex", "-1");
+            }
+            target.focus({ preventScroll: true });
             if (id === "top") {
                 history.replaceState(null, null, " ");
             } else {
@@ -249,14 +270,20 @@ In derselben Pfanne die Butter erhitzen. Die Zwiebelringe bei mittlerer Hitze go
 </script>
 <script>
     var toplink = document.getElementById("top-link");
-    window.onscroll = function () {
-        const scrollThreshold = window.innerHeight;
-        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
-            toplink.classList.remove("hidden");
-        } else {
-            toplink.classList.add("hidden");
+    var scrollTicking = false;
+    
+    window.addEventListener("scroll", function () {
+        if (scrollTicking) {
+            return;
         }
-    };
+        scrollTicking = true;
+        requestAnimationFrame(function () {
+            const scrollThreshold = window.innerHeight;
+            const shown = document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold;
+            toplink.classList.toggle("hidden", !shown);
+            scrollTicking = false;
+        });
+    }, { passive: true });
 
 </script>
 <script>

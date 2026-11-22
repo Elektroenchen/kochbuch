@@ -148,12 +148,23 @@ Ingwer schälen und in feine Scheiben schneiden.
 Brokkoli putzen und in Röschen teilen, den Strunk schälen und würfeln.
 Hähnchenbrust quer in ca. ½ cm breite Scheiben schneiden.
 Kichererbsen abgießen, abspülen und abtropfen lassen.
-...</p>
+Schritt 2:
+Öl in einem großen Topf erhitzen.
+Weiße Frühlingszwiebelstücke und Ingwer bei mittlerer Hitze ca. 3 Minuten dünsten.
+Currypaste zugeben und unter Rühren kurz mitdünsten.
+Kokosmilch und Hühnerbrühe zugießen, aufkochen und ca. 5 Minuten köcheln lassen.
+Schritt 3:
+Hähnchen zugeben und ca. 5 Minuten garen.
+Brokkoli zufügen und weitere 4 Minuten mitgaren.
+Kichererbsen unterrühren und ca. 2 Minuten im Eintopf erwärmen.
+Mit Salz, braunem Zucker und Limettensaft abschmecken.
+Mit den grünen Frühlingszwiebeln und Röstzwiebeln bestreut servieren.
+</p>
   </div>
   <footer class="entry-footer">
 
-<span title='2026-02-07 00:00:00 +0000 UTC'>February 7, 2026</span></footer>
-  <a class="entry-link" aria-label="post link to Hähnchen-Kichererbsen-Eintopf mit Brokkoli & Kokosmilch" href="https://Elektroenchen.github.io/kochbuch/rezepte/haehnchen-kichererbsen-eintopf/"></a>
+<span title='2026-02-07T00:00:00+00:00'>7. Februar 2026</span></footer>
+  <a class="entry-link" aria-label="post link to Hähnchen-Kichererbsen-Eintopf mit Brokkoli &amp; Kokosmilch" href="https://Elektroenchen.github.io/kochbuch/rezepte/haehnchen-kichererbsen-eintopf/"></a>
 </article>
     </main>
     
@@ -185,22 +196,34 @@ Kichererbsen abgießen, abspülen und abtropfen lassen.
             menu.scrollLeft = parseInt(scrollPosition, 10);
         }
         
-        menu.onscroll = function () {
-            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
-        }
+        
+        let menuScrollTimeout;
+        menu.addEventListener("scroll", function () {
+            clearTimeout(menuScrollTimeout);
+            menuScrollTimeout = setTimeout(function () {
+                localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+            }, 150);
+        }, { passive: true });
     }
 
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener("click", function (e) {
             e.preventDefault();
             var id = this.getAttribute("href").substr(1);
+            const target = document.querySelector(`[id='${decodeURIComponent(id)}']`);
             if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                target.scrollIntoView({
                     behavior: "smooth"
                 });
             } else {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+                target.scrollIntoView();
             }
+            
+            
+            if (target.tabIndex < 0 && !target.hasAttribute("tabindex")) {
+                target.setAttribute("tabindex", "-1");
+            }
+            target.focus({ preventScroll: true });
             if (id === "top") {
                 history.replaceState(null, null, " ");
             } else {
@@ -212,14 +235,20 @@ Kichererbsen abgießen, abspülen und abtropfen lassen.
 </script>
 <script>
     var toplink = document.getElementById("top-link");
-    window.onscroll = function () {
-        const scrollThreshold = window.innerHeight;
-        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
-            toplink.classList.remove("hidden");
-        } else {
-            toplink.classList.add("hidden");
+    var scrollTicking = false;
+    
+    window.addEventListener("scroll", function () {
+        if (scrollTicking) {
+            return;
         }
-    };
+        scrollTicking = true;
+        requestAnimationFrame(function () {
+            const scrollThreshold = window.innerHeight;
+            const shown = document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold;
+            toplink.classList.toggle("hidden", !shown);
+            scrollTicking = false;
+        });
+    }, { passive: true });
 
 </script>
 <script>

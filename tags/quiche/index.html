@@ -142,11 +142,13 @@
 Schritt 2 Zucchini und Paprika putzen und fein schneiden oder reiben.
 Zwiebeln schälen und fein hacken.
 Schritt 3 Alle Zutaten in einer großen Schüssel vermischen.
-...</p>
+Schritt 4 Die Masse gleichmäßig auf dem beschichteten Backblech verteilen und ca. 20–25 Minuten backen.
+Schritt 5 Kurz abkühlen lassen und servieren.
+</p>
   </div>
   <footer class="entry-footer">
 
-<span title='2026-05-11 00:00:00 +0000 UTC'>May 11, 2026</span></footer>
+<span title='2026-05-11T00:00:00+00:00'>11. Mai 2026</span></footer>
   <a class="entry-link" aria-label="post link to Gemüse-Quiche vom Blech" href="https://Elektroenchen.github.io/kochbuch/rezepte/gem%C3%BCse-quiche_vom_blech/"></a>
 </article>
     </main>
@@ -179,22 +181,34 @@ Schritt 3 Alle Zutaten in einer großen Schüssel vermischen.
             menu.scrollLeft = parseInt(scrollPosition, 10);
         }
         
-        menu.onscroll = function () {
-            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
-        }
+        
+        let menuScrollTimeout;
+        menu.addEventListener("scroll", function () {
+            clearTimeout(menuScrollTimeout);
+            menuScrollTimeout = setTimeout(function () {
+                localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+            }, 150);
+        }, { passive: true });
     }
 
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener("click", function (e) {
             e.preventDefault();
             var id = this.getAttribute("href").substr(1);
+            const target = document.querySelector(`[id='${decodeURIComponent(id)}']`);
             if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                target.scrollIntoView({
                     behavior: "smooth"
                 });
             } else {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+                target.scrollIntoView();
             }
+            
+            
+            if (target.tabIndex < 0 && !target.hasAttribute("tabindex")) {
+                target.setAttribute("tabindex", "-1");
+            }
+            target.focus({ preventScroll: true });
             if (id === "top") {
                 history.replaceState(null, null, " ");
             } else {
@@ -206,14 +220,20 @@ Schritt 3 Alle Zutaten in einer großen Schüssel vermischen.
 </script>
 <script>
     var toplink = document.getElementById("top-link");
-    window.onscroll = function () {
-        const scrollThreshold = window.innerHeight;
-        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
-            toplink.classList.remove("hidden");
-        } else {
-            toplink.classList.add("hidden");
+    var scrollTicking = false;
+    
+    window.addEventListener("scroll", function () {
+        if (scrollTicking) {
+            return;
         }
-    };
+        scrollTicking = true;
+        requestAnimationFrame(function () {
+            const scrollThreshold = window.innerHeight;
+            const shown = document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold;
+            toplink.classList.toggle("hidden", !shown);
+            scrollTicking = false;
+        });
+    }, { passive: true });
 
 </script>
 <script>

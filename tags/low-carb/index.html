@@ -143,11 +143,13 @@
 Dressing zubereiten
 Saure Sahne, Joghurt, Zitronensaft und Öl in einer Schüssel verrühren. Knoblauch dazupressen, mit Salz, Pfeffer und Zucker abschmecken. Käse schneiden
 Käse längs halbieren und in feine Streifen (0,5 × 4 cm) schneiden. In einer Schüssel mit dem Dressing vermengen. Gemüse vorbereiten
-...</p>
+Radieschen waschen, putzen und in dünne Scheiben schneiden. Eisbergsalat waschen, in feine Streifen schneiden. Cornichons in dünne Scheiben schneiden. Vermengen und ziehen lassen
+Alles zum Käse geben und gut vermengen. Mindestens 15 Minuten bei Zimmertemperatur ziehen lassen Tipp:
+Wenn man Salat und Radieschen erst kurz vor dem Servieren zugibt, kann man den Rest des Salats bereits am Vorabend vorbereiten. Vor dem Servieren nach Belieben mit 1 EL Schnittlauchröllchen bestreuen. </p>
   </div>
   <footer class="entry-footer">
 
-<span title='2025-02-15 00:00:00 +0000 UTC'>February 15, 2025</span></footer>
+<span title='2025-02-15T00:00:00+00:00'>15. Februar 2025</span></footer>
   <a class="entry-link" aria-label="post link to Allgäuer Käsesalat" href="https://Elektroenchen.github.io/kochbuch/rezepte/allg%C3%A4uer_k%C3%A4sesalat/"></a>
 </article>
     </main>
@@ -180,22 +182,34 @@ Käse längs halbieren und in feine Streifen (0,5 × 4 cm) schneiden. In einer S
             menu.scrollLeft = parseInt(scrollPosition, 10);
         }
         
-        menu.onscroll = function () {
-            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
-        }
+        
+        let menuScrollTimeout;
+        menu.addEventListener("scroll", function () {
+            clearTimeout(menuScrollTimeout);
+            menuScrollTimeout = setTimeout(function () {
+                localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+            }, 150);
+        }, { passive: true });
     }
 
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener("click", function (e) {
             e.preventDefault();
             var id = this.getAttribute("href").substr(1);
+            const target = document.querySelector(`[id='${decodeURIComponent(id)}']`);
             if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                target.scrollIntoView({
                     behavior: "smooth"
                 });
             } else {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+                target.scrollIntoView();
             }
+            
+            
+            if (target.tabIndex < 0 && !target.hasAttribute("tabindex")) {
+                target.setAttribute("tabindex", "-1");
+            }
+            target.focus({ preventScroll: true });
             if (id === "top") {
                 history.replaceState(null, null, " ");
             } else {
@@ -207,14 +221,20 @@ Käse längs halbieren und in feine Streifen (0,5 × 4 cm) schneiden. In einer S
 </script>
 <script>
     var toplink = document.getElementById("top-link");
-    window.onscroll = function () {
-        const scrollThreshold = window.innerHeight;
-        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
-            toplink.classList.remove("hidden");
-        } else {
-            toplink.classList.add("hidden");
+    var scrollTicking = false;
+    
+    window.addEventListener("scroll", function () {
+        if (scrollTicking) {
+            return;
         }
-    };
+        scrollTicking = true;
+        requestAnimationFrame(function () {
+            const scrollThreshold = window.innerHeight;
+            const shown = document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold;
+            toplink.classList.toggle("hidden", !shown);
+            scrollTicking = false;
+        });
+    }, { passive: true });
 
 </script>
 <script>

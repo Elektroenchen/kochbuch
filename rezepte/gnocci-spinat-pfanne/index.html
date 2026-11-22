@@ -28,7 +28,13 @@ Schalotten und Knoblauch schälen und klein schneiden. Spinat waschen.
 Schritt 2:
 Etwas Butter in einer großen Pfanne erhitzen. Gnocchi darin anbraten, bis sie Farbe bekommen. Herausnehmen und beiseitestellen.
 Schritt 3:
-Restliche Butter in die Pfanne geben, Schalotten und Knoblauch anschwitzen.">
+Restliche Butter in die Pfanne geben, Schalotten und Knoblauch anschwitzen.
+Schritt 4:
+Spinat hinzufügen und zusammenfallen lassen. Sahne zugießen und alles mit Salz und Pfeffer würzen. Kurz einköcheln lassen.
+Schritt 5:
+Gnocchi und Parmesan dazugeben, gut verrühren und sofort servieren.
+
+">
 <meta name="author" content="">
 <link rel="canonical" href="https://Elektroenchen.github.io/kochbuch/rezepte/gnocci-spinat-pfanne/">
 <link crossorigin="anonymous" href="/kochbuch/assets/css/stylesheet.css" rel="preload stylesheet" as="style">
@@ -95,7 +101,11 @@ Schalotten und Knoblauch schälen und klein schneiden. Spinat waschen.
 Schritt 2:
 Etwas Butter in einer großen Pfanne erhitzen. Gnocchi darin anbraten, bis sie Farbe bekommen. Herausnehmen und beiseitestellen.
 Schritt 3:
-Restliche Butter in die Pfanne geben, Schalotten und Knoblauch anschwitzen.">
+Restliche Butter in die Pfanne geben, Schalotten und Knoblauch anschwitzen.
+Schritt 4:
+Spinat hinzufügen und zusammenfallen lassen. Sahne zugießen und alles mit Salz und Pfeffer würzen. Kurz einköcheln lassen.
+Schritt 5:
+Gnocchi und Parmesan dazugeben, gut verrühren und sofort servieren.">
   <meta property="og:locale" content="de_de">
   <meta property="og:type" content="article">
     <meta property="article:section" content="rezepte">
@@ -117,7 +127,11 @@ Schalotten und Knoblauch schälen und klein schneiden. Spinat waschen.
 Schritt 2:
 Etwas Butter in einer großen Pfanne erhitzen. Gnocchi darin anbraten, bis sie Farbe bekommen. Herausnehmen und beiseitestellen.
 Schritt 3:
-Restliche Butter in die Pfanne geben, Schalotten und Knoblauch anschwitzen.">
+Restliche Butter in die Pfanne geben, Schalotten und Knoblauch anschwitzen.
+Schritt 4:
+Spinat hinzufügen und zusammenfallen lassen. Sahne zugießen und alles mit Salz und Pfeffer würzen. Kurz einköcheln lassen.
+Schritt 5:
+Gnocchi und Parmesan dazugeben, gut verrühren und sofort servieren.">
 
 
 <script type="application/ld+json">
@@ -146,7 +160,7 @@ Restliche Butter in die Pfanne geben, Schalotten und Knoblauch anschwitzen.">
   "@type": "BlogPosting",
   "headline": "Gnocchi-Spinat-Pfanne",
   "name": "Gnocchi-Spinat-Pfanne",
-  "description": "\rZutaten für 4 Portionen\n1.200 g Gnocchi (aus dem Kühlregal) 400 g Blattspinat 2–4 Schalotten 2–4 Knoblauchzehen 50 g Butter 400 ml Kochsahne (15 % Fett) 100 g Parmesan (frisch gerieben) Salz, Pfeffer (nach Belieben) Zubereitung\nSchritt 1:\nSchalotten und Knoblauch schälen und klein schneiden. Spinat waschen.\nSchritt 2:\nEtwas Butter in einer großen Pfanne erhitzen. Gnocchi darin anbraten, bis sie Farbe bekommen. Herausnehmen und beiseitestellen.\nSchritt 3:\nRestliche Butter in die Pfanne geben, Schalotten und Knoblauch anschwitzen.\n",
+  "description": "\rZutaten für 4 Portionen\n1.200 g Gnocchi (aus dem Kühlregal) 400 g Blattspinat 2–4 Schalotten 2–4 Knoblauchzehen 50 g Butter 400 ml Kochsahne (15 % Fett) 100 g Parmesan (frisch gerieben) Salz, Pfeffer (nach Belieben) Zubereitung\nSchritt 1:\nSchalotten und Knoblauch schälen und klein schneiden. Spinat waschen.\nSchritt 2:\nEtwas Butter in einer großen Pfanne erhitzen. Gnocchi darin anbraten, bis sie Farbe bekommen. Herausnehmen und beiseitestellen.\nSchritt 3:\nRestliche Butter in die Pfanne geben, Schalotten und Knoblauch anschwitzen.\nSchritt 4:\nSpinat hinzufügen und zusammenfallen lassen. Sahne zugießen und alles mit Salz und Pfeffer würzen. Kurz einköcheln lassen.\nSchritt 5:\nGnocchi und Parmesan dazugeben, gut verrühren und sofort servieren.\n",
   "keywords": [
     "Gnocchi", "Spinat", "vegetarisch", "schnell", "Pfannengericht"
   ],
@@ -227,7 +241,7 @@ Restliche Butter in die Pfanne geben, Schalotten und Knoblauch anschwitzen.">
     </h1>
     <div class="post-meta">
 
-<span title='2025-11-16 00:00:00 +0000 UTC'>November 16, 2025</span>
+<span title='2025-11-16T00:00:00+00:00'>16. November 2025</span>
 
 </div>
   </header> 
@@ -307,22 +321,34 @@ Gnocchi und Parmesan dazugeben, gut verrühren und sofort servieren.</p>
             menu.scrollLeft = parseInt(scrollPosition, 10);
         }
         
-        menu.onscroll = function () {
-            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
-        }
+        
+        let menuScrollTimeout;
+        menu.addEventListener("scroll", function () {
+            clearTimeout(menuScrollTimeout);
+            menuScrollTimeout = setTimeout(function () {
+                localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+            }, 150);
+        }, { passive: true });
     }
 
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener("click", function (e) {
             e.preventDefault();
             var id = this.getAttribute("href").substr(1);
+            const target = document.querySelector(`[id='${decodeURIComponent(id)}']`);
             if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                target.scrollIntoView({
                     behavior: "smooth"
                 });
             } else {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+                target.scrollIntoView();
             }
+            
+            
+            if (target.tabIndex < 0 && !target.hasAttribute("tabindex")) {
+                target.setAttribute("tabindex", "-1");
+            }
+            target.focus({ preventScroll: true });
             if (id === "top") {
                 history.replaceState(null, null, " ");
             } else {
@@ -334,14 +360,20 @@ Gnocchi und Parmesan dazugeben, gut verrühren und sofort servieren.</p>
 </script>
 <script>
     var toplink = document.getElementById("top-link");
-    window.onscroll = function () {
-        const scrollThreshold = window.innerHeight;
-        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
-            toplink.classList.remove("hidden");
-        } else {
-            toplink.classList.add("hidden");
+    var scrollTicking = false;
+    
+    window.addEventListener("scroll", function () {
+        if (scrollTicking) {
+            return;
         }
-    };
+        scrollTicking = true;
+        requestAnimationFrame(function () {
+            const scrollThreshold = window.innerHeight;
+            const shown = document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold;
+            toplink.classList.toggle("hidden", !shown);
+            scrollTicking = false;
+        });
+    }, { passive: true });
 
 </script>
 <script>

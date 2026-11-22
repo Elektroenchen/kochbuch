@@ -143,11 +143,12 @@
 Passionsfrüchte vorbereiten
 Zwei Passionsfrüchte halbieren und das Fruchtfleisch in einen Cocktailshaker geben. Zutaten shaken
 Vanille-Wodka, Passionsfruchtlikör, Limettensaft und Vanille-Sirup dazugeben. Eiswürfel hinzufügen und kräftig shaken – das sorgt für den typischen Schaum. Abseihen
-...</p>
+Den Drink durch ein feines Sieb in zwei vorgekühlte Martini-Gläser abseihen. Dekorieren &amp; Servieren
+Jede Portion mit einer halben Passionsfrucht garnieren. Prosecco oder Champagner in kleinen Shotgläsern separat dazu reichen. </p>
   </div>
   <footer class="entry-footer">
 
-<span title='2025-05-09 00:00:00 +0000 UTC'>May 9, 2025</span></footer>
+<span title='2025-05-09T00:00:00+00:00'>9. Mai 2025</span></footer>
   <a class="entry-link" aria-label="post link to Pornstar Martini" href="https://Elektroenchen.github.io/kochbuch/rezepte/pornstar_martini/"></a>
 </article>
     </main>
@@ -180,22 +181,34 @@ Vanille-Wodka, Passionsfruchtlikör, Limettensaft und Vanille-Sirup dazugeben. E
             menu.scrollLeft = parseInt(scrollPosition, 10);
         }
         
-        menu.onscroll = function () {
-            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
-        }
+        
+        let menuScrollTimeout;
+        menu.addEventListener("scroll", function () {
+            clearTimeout(menuScrollTimeout);
+            menuScrollTimeout = setTimeout(function () {
+                localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+            }, 150);
+        }, { passive: true });
     }
 
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener("click", function (e) {
             e.preventDefault();
             var id = this.getAttribute("href").substr(1);
+            const target = document.querySelector(`[id='${decodeURIComponent(id)}']`);
             if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                target.scrollIntoView({
                     behavior: "smooth"
                 });
             } else {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+                target.scrollIntoView();
             }
+            
+            
+            if (target.tabIndex < 0 && !target.hasAttribute("tabindex")) {
+                target.setAttribute("tabindex", "-1");
+            }
+            target.focus({ preventScroll: true });
             if (id === "top") {
                 history.replaceState(null, null, " ");
             } else {
@@ -207,14 +220,20 @@ Vanille-Wodka, Passionsfruchtlikör, Limettensaft und Vanille-Sirup dazugeben. E
 </script>
 <script>
     var toplink = document.getElementById("top-link");
-    window.onscroll = function () {
-        const scrollThreshold = window.innerHeight;
-        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
-            toplink.classList.remove("hidden");
-        } else {
-            toplink.classList.add("hidden");
+    var scrollTicking = false;
+    
+    window.addEventListener("scroll", function () {
+        if (scrollTicking) {
+            return;
         }
-    };
+        scrollTicking = true;
+        requestAnimationFrame(function () {
+            const scrollThreshold = window.innerHeight;
+            const shown = document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold;
+            toplink.classList.toggle("hidden", !shown);
+            scrollTicking = false;
+        });
+    }, { passive: true });
 
 </script>
 <script>

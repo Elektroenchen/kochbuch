@@ -131,7 +131,7 @@
 
 <article class="post-entry tag-entry"> 
 <figure class="entry-cover">
-        <img loading="lazy" src="https://Elektroenchen.github.io/kochbuch/images/gem%C3%BCsegratin_kartoffeln_feta.jpg" alt="Gemüsegratin mit Kartoffeln & Feta">
+        <img loading="lazy" src="https://Elektroenchen.github.io/kochbuch/images/gem%C3%BCsegratin_kartoffeln_feta.jpg" alt="Gemüsegratin mit Kartoffeln &amp; Feta">
 </figure>
   <header class="entry-header">
     <h2 class="entry-hint-parent">Gemüsegratin mit Kartoffeln &amp; Feta
@@ -143,12 +143,20 @@
 Schritt 1:
 Kartoffeln waschen und halbieren. Zucchini, Paprika, Aubergine und Fenchel waschen, putzen und in grobe Würfel schneiden.
 Zwiebeln abziehen und in dünne Streifen schneiden.
-...</p>
+Schritt 2:
+Backofen auf 180 °C Umluft vorheizen.
+Ein Backblech mit Backpapier belegen oder ein antihaftbeschichtetes Backblech verwenden.
+Schritt 3:
+Vorbereitetes Gemüse mit Kirschtomaten, Oliven und Olivenöl vermischen.
+Mit Salz und Pfeffer würzen und auf dem Backblech verteilen.
+Mit Oregano bestreuen und den Feta darüberbröckeln.
+Im Ofen ca. 30 Minuten backen.
+</p>
   </div>
   <footer class="entry-footer">
 
-<span title='2026-01-31 00:00:00 +0000 UTC'>January 31, 2026</span></footer>
-  <a class="entry-link" aria-label="post link to Gemüsegratin mit Kartoffeln & Feta" href="https://Elektroenchen.github.io/kochbuch/rezepte/gem%C3%BCsegratin_kartoffeln_feta/"></a>
+<span title='2026-01-31T00:00:00+00:00'>31. Januar 2026</span></footer>
+  <a class="entry-link" aria-label="post link to Gemüsegratin mit Kartoffeln &amp; Feta" href="https://Elektroenchen.github.io/kochbuch/rezepte/gem%C3%BCsegratin_kartoffeln_feta/"></a>
 </article>
     </main>
     
@@ -180,22 +188,34 @@ Zwiebeln abziehen und in dünne Streifen schneiden.
             menu.scrollLeft = parseInt(scrollPosition, 10);
         }
         
-        menu.onscroll = function () {
-            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
-        }
+        
+        let menuScrollTimeout;
+        menu.addEventListener("scroll", function () {
+            clearTimeout(menuScrollTimeout);
+            menuScrollTimeout = setTimeout(function () {
+                localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+            }, 150);
+        }, { passive: true });
     }
 
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener("click", function (e) {
             e.preventDefault();
             var id = this.getAttribute("href").substr(1);
+            const target = document.querySelector(`[id='${decodeURIComponent(id)}']`);
             if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                target.scrollIntoView({
                     behavior: "smooth"
                 });
             } else {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+                target.scrollIntoView();
             }
+            
+            
+            if (target.tabIndex < 0 && !target.hasAttribute("tabindex")) {
+                target.setAttribute("tabindex", "-1");
+            }
+            target.focus({ preventScroll: true });
             if (id === "top") {
                 history.replaceState(null, null, " ");
             } else {
@@ -207,14 +227,20 @@ Zwiebeln abziehen und in dünne Streifen schneiden.
 </script>
 <script>
     var toplink = document.getElementById("top-link");
-    window.onscroll = function () {
-        const scrollThreshold = window.innerHeight;
-        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
-            toplink.classList.remove("hidden");
-        } else {
-            toplink.classList.add("hidden");
+    var scrollTicking = false;
+    
+    window.addEventListener("scroll", function () {
+        if (scrollTicking) {
+            return;
         }
-    };
+        scrollTicking = true;
+        requestAnimationFrame(function () {
+            const scrollThreshold = window.innerHeight;
+            const shown = document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold;
+            toplink.classList.toggle("hidden", !shown);
+            scrollTicking = false;
+        });
+    }, { passive: true });
 
 </script>
 <script>

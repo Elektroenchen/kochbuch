@@ -143,11 +143,13 @@
 Schritt 1:
 Kürbis waschen, entkernen und in kleine Würfel schneiden. Schalotten und Knoblauch abziehen und fein hacken. Schritt 2:
 Pasta nach Packungsanweisung in Salzwasser al dente kochen. Schritt 3:
-...</p>
+Olivenöl in einer großen Pfanne erhitzen. Schalotten und Knoblauch darin glasig dünsten, Kürbiswürfel hinzufügen und 5–7 Minuten mitdünsten. Schritt 4:
+Mit Gemüsebrühe und Sahne ablöschen. Thymian zugeben und alles 5–8 Minuten köcheln lassen, bis der Kürbis weich ist. Mit Salz, Pfeffer und Chili würzen. Schritt 5:
+Pasta abgießen und zur Kürbis-Sauce geben. Parmesan unterheben und alles gut vermengen. </p>
   </div>
   <footer class="entry-footer">
 
-<span title='2025-10-25 00:00:00 +0000 UTC'>October 25, 2025</span></footer>
+<span title='2025-10-25T00:00:00+00:00'>25. Oktober 2025</span></footer>
   <a class="entry-link" aria-label="post link to Pasta mit Hokkaido-Kürbis" href="https://Elektroenchen.github.io/kochbuch/rezepte/pasta_hokkaido-k%C3%BCrbis/"></a>
 </article>
 
@@ -166,11 +168,12 @@ Pasta kochen
 Linguine in reichlich Salzwasser „al dente“ kochen. Etwas Nudelwasser in einer Tasse auffangen. Zitronen vorbereiten
 Zitronenschale abreiben (nur das Gelbe) und den Saft auspressen. Soße zubereiten
 Olivenöl mit Zitronensaft, etwas Zitronenabrieb und Parmesan gut vermischen. Mit Salz und Pfeffer abschmecken und ziehen lassen. Pasta und Soße vermengen
-...</p>
+Abgetropfte Nudeln zurück in den Topf geben. Soße hinzufügen und zügig vermengen. Nach Bedarf nach und nach etwas Nudelwasser dazugeben, bis die Soße schön sämig wird. Anrichten
+Mit frischem Basilikum, Zitronenabrieb und Parmesan servieren. </p>
   </div>
   <footer class="entry-footer">
 
-<span title='2025-05-09 00:00:00 +0000 UTC'>May 9, 2025</span></footer>
+<span title='2025-05-09T00:00:00+00:00'>9. Mai 2025</span></footer>
   <a class="entry-link" aria-label="post link to Linguine al Limone" href="https://Elektroenchen.github.io/kochbuch/rezepte/linguine_al_limone/"></a>
 </article>
 
@@ -187,11 +190,14 @@ Olivenöl mit Zitronensaft, etwas Zitronenabrieb und Parmesan gut vermischen. Mi
 400 g Pasta nach Wahl (z. B. Penne) 500 g grüner Spargel 1 Bio-Zitrone (Abrieb und Saft) 50 g Pistazien (ungesalzen, geröstet) 60 g Butter 2 Knoblauchzehen 30 g frische Basilikumblätter Meersalz Frisch gemahlener schwarzer Pfeffer Frisch geriebener Parmesan (zum Servieren) Zubereitung
 Vorbereitung
 Pistazien schälen und grob hacken. Basilikum waschen, trocken tupfen und in feine Streifen schneiden. Zitrone heiß abwaschen, die Schale abreiben und den Saft auspressen. Knoblauch schälen und fein hacken. Spargel waschen, die holzigen Enden abschneiden und die Stangen schräg in ca. 2–3 cm lange Stücke schneiden. Pasta und Spargel kochen
-...</p>
+In einem großen Topf Salzwasser zum Kochen bringen. Die Pasta nach Packungsanweisung al dente kochen. Etwa 5 Minuten vor Ende der Kochzeit die Spargelstücke mit in das Kochwasser geben. Zitronen-Buttersoße zubereiten
+Während die Pasta kocht, die Butter in einer großen Pfanne bei mittlerer Hitze schmelzen. Den Knoblauch darin kurz anschwitzen, bis er duftet (nicht bräunen). Zitronenabrieb und -saft hinzufügen und kurz aufkochen lassen. Mit Salz und Pfeffer abschmecken. Pasta und Spargel abgießen
+Pasta und Spargel abgießen und dabei etwas Kochwasser auffangen. Beides zur Zitronen-Buttersoße in die Pfanne geben und gut vermengen. Falls nötig, etwas vom Kochwasser hinzufügen, um die Soße zu verlängern. Anrichten
+Die gehackten Pistazien und das Basilikum unter die Pasta mischen. Auf Tellern anrichten und mit frisch geriebenem Parmesan bestreuen. Sofort servieren. </p>
   </div>
   <footer class="entry-footer">
 
-<span title='2025-05-09 00:00:00 +0000 UTC'>May 9, 2025</span></footer>
+<span title='2025-05-09T00:00:00+00:00'>9. Mai 2025</span></footer>
   <a class="entry-link" aria-label="post link to Pasta mit grünem Spargel in Zitronen-Buttersoße" href="https://Elektroenchen.github.io/kochbuch/rezepte/pasta_gruener_spargel/"></a>
 </article>
     </main>
@@ -224,22 +230,34 @@ Pistazien schälen und grob hacken. Basilikum waschen, trocken tupfen und in fei
             menu.scrollLeft = parseInt(scrollPosition, 10);
         }
         
-        menu.onscroll = function () {
-            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
-        }
+        
+        let menuScrollTimeout;
+        menu.addEventListener("scroll", function () {
+            clearTimeout(menuScrollTimeout);
+            menuScrollTimeout = setTimeout(function () {
+                localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+            }, 150);
+        }, { passive: true });
     }
 
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener("click", function (e) {
             e.preventDefault();
             var id = this.getAttribute("href").substr(1);
+            const target = document.querySelector(`[id='${decodeURIComponent(id)}']`);
             if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                target.scrollIntoView({
                     behavior: "smooth"
                 });
             } else {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+                target.scrollIntoView();
             }
+            
+            
+            if (target.tabIndex < 0 && !target.hasAttribute("tabindex")) {
+                target.setAttribute("tabindex", "-1");
+            }
+            target.focus({ preventScroll: true });
             if (id === "top") {
                 history.replaceState(null, null, " ");
             } else {
@@ -251,14 +269,20 @@ Pistazien schälen und grob hacken. Basilikum waschen, trocken tupfen und in fei
 </script>
 <script>
     var toplink = document.getElementById("top-link");
-    window.onscroll = function () {
-        const scrollThreshold = window.innerHeight;
-        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
-            toplink.classList.remove("hidden");
-        } else {
-            toplink.classList.add("hidden");
+    var scrollTicking = false;
+    
+    window.addEventListener("scroll", function () {
+        if (scrollTicking) {
+            return;
         }
-    };
+        scrollTicking = true;
+        requestAnimationFrame(function () {
+            const scrollThreshold = window.innerHeight;
+            const shown = document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold;
+            toplink.classList.toggle("hidden", !shown);
+            scrollTicking = false;
+        });
+    }, { passive: true });
 
 </script>
 <script>
