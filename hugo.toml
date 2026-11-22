@@ -1,5 +1,5 @@
 baseURL = 'https://Elektroenchen.github.io/kochbuch/'
-languageCode = 'de-de'
+locale = 'de-DE'
 title = 'Zimmers Kochbuch'
 theme = "PaperMod"
 
